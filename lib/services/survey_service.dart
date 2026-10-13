@@ -1,12 +1,19 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../core/constants.dart';
+import 'local_database_service.dart';
 
 class SurveyService {
   final SupabaseClient client = Supabase.instance.client;
 
-  // Sign In with email/username & password
-  Future<AuthResponse> signIn(String email, String password) async {
+  // Sign In with username or email & password
+  Future<AuthResponse> signIn(String userInput, String password) async {
+    // If user enters pure username (e.g. 'agent'), map to internal email
+    final email = userInput.contains('@')
+        ? userInput.trim()
+        : '${userInput.trim().toLowerCase()}@qualitysurvey.com';
+
     return await client.auth.signInWithPassword(email: email, password: password);
   }
 
@@ -65,7 +72,7 @@ class SurveyService {
 
   // Submit Survey Response
   Future<void> submitSurvey({
-    required int districtId,
+    required String districtName,
     required int acId,
     required String? respondentName,
     required String? respondentPhone,
@@ -73,6 +80,7 @@ class SurveyService {
     required String? respondentGender,
     required String surveyStatus,
     required Map<String, dynamic> answers,
+    required Map<String, dynamic>? location,
     required String audioFileUrl,
     required int recordingDuration,
   }) async {
@@ -80,7 +88,7 @@ class SurveyService {
 
     await client.from('survey_responses').insert({
       'surveyor_id': user?.id,
-      'district_id': districtId,
+      'district_name': districtName,
       'ac_id': acId,
       'respondent_name': respondentName,
       'respondent_phone': respondentPhone,
@@ -88,9 +96,51 @@ class SurveyService {
       'respondent_gender': respondentGender,
       'survey_status': surveyStatus,
       'answers': answers,
+      'location': location,
       'audio_file_url': audioFileUrl,
       'recording_duration_seconds': recordingDuration,
       'submitted_at': DateTime.now().toUtc().toIso8601String(),
     });
+  }
+
+  // Auto-sync all local drafts to Supabase
+  Future<int> syncOfflineDrafts() async {
+    final drafts = await LocalDatabaseService.instance.getDrafts();
+    if (drafts.isEmpty) return 0;
+
+    int syncedCount = 0;
+    for (var draft in drafts) {
+      try {
+        final draftId = draft['id'] as int;
+        final acId = draft['ac_id'] as int;
+        final audioFile = File(draft['local_audio_path'] as String);
+
+        String audioUrl = '';
+        if (await audioFile.exists()) {
+          audioUrl = await uploadAudio(audioFile, acId);
+        }
+
+        await submitSurvey(
+          districtName: draft['district_name'] as String,
+          acId: acId,
+          respondentName: draft['respondent_name'] as String?,
+          respondentPhone: draft['respondent_phone'] as String?,
+          respondentAge: draft['respondent_age'] as int?,
+          respondentGender: draft['respondent_gender'] as String?,
+          surveyStatus: draft['survey_status'] as String? ?? 'completed',
+          answers: json.decode(draft['answers'] as String),
+          location: json.decode(draft['location'] as String),
+          audioFileUrl: audioUrl,
+          recordingDuration: draft['recording_duration'] as int? ?? 0,
+        );
+
+        await LocalDatabaseService.instance.deleteDraft(draftId);
+        syncedCount++;
+      } catch (_) {
+        // If still offline, stop batch and try next time
+        break;
+      }
+    }
+    return syncedCount;
   }
 }

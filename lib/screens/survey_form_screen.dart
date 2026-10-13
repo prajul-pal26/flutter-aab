@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:record/record.dart';
+import 'package:geolocator/geolocator.dart';
 import '../services/survey_service.dart';
+import '../services/local_database_service.dart';
 
 class SurveyFormScreen extends StatefulWidget {
   final String districtName;
@@ -34,6 +36,11 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
   Timer? _timer;
   int _secondsRecorded = 0;
 
+  // GPS Live State in Page 3
+  bool _isGpsActive = false;
+  Position? _currentPosition;
+  StreamSubscription<Position>? _positionSubscription;
+
   // Form Answers State
   final Map<int, dynamic> _answers = {};
   final Map<int, TextEditingController> _textControllers = {};
@@ -45,12 +52,14 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
   void initState() {
     super.initState();
     _startAudioRecording();
+    _initLiveLocationTracking();
     _loadQuestions();
   }
 
   @override
   void dispose() {
     _timer?.cancel();
+    _positionSubscription?.cancel();
     if (_isRecording) {
       _audioRecorder.stop();
       _audioRecorder.dispose();
@@ -62,6 +71,41 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
       c.dispose();
     }
     super.dispose();
+  }
+
+  // Real-time GPS Tracking in Page 3
+  Future<void> _initLiveLocationTracking() async {
+    try {
+      final pos = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+        timeLimit: const Duration(seconds: 4),
+      );
+
+      if (pos != null && mounted) {
+        setState(() {
+          _isGpsActive = true;
+          _currentPosition = pos;
+        });
+      }
+
+      _positionSubscription = Geolocator.getPositionStream(
+        locationSettings: const LocationSettings(
+          accuracy: LocationAccuracy.high,
+          distanceFilter: 2,
+        ),
+      ).listen((Position position) {
+        if (mounted) {
+          setState(() {
+            _isGpsActive = true;
+            _currentPosition = position;
+          });
+        }
+      }, onError: (_) {
+        if (mounted) setState(() => _isGpsActive = false);
+      });
+    } catch (_) {
+      if (mounted) setState(() => _isGpsActive = false);
+    }
   }
 
   // Audio Recording Flow
@@ -137,7 +181,18 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
   }
 
   Future<void> _handleSubmitSurvey() async {
-    // Basic verification of Q1-Q3 screening
+    // Corner Case Check: Location MUST be active
+    if (!_isGpsActive || _currentPosition == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('जीपीएस सिग्नल सक्रिय होना अनिवार्य है। कृपया लोकेशन ऑन करें।'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      return;
+    }
+
+    // Screening check Q1-Q3
     for (int id = 1; id <= 3; id++) {
       if (_answers[id] == 'नहीं (End survey)') {
         _handleScreenOut();
@@ -155,11 +210,6 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
         setState(() => _isRecording = false);
       }
 
-      String audioUrl = '';
-      if (audioPath != null && File(audioPath).existsSync()) {
-        audioUrl = await _surveyService.uploadAudio(File(audioPath), widget.acData['ac_no']);
-      }
-
       final Map<String, dynamic> formattedAnswers = {};
       for (var entry in _answers.entries) {
         formattedAnswers['q_${entry.key}'] = entry.value;
@@ -170,59 +220,112 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
         }
       }
 
-      await _surveyService.submitSurvey(
-        districtId: 1, // Mapped via AC
-        acId: widget.acData['ac_no'],
-        respondentName: _textControllers[4]?.text.trim(),
-        respondentPhone: _textControllers[7]?.text.trim(),
-        respondentAge: int.tryParse(_textControllers[8]?.text.trim() ?? ''),
-        respondentGender: _answers[6]?.toString(),
-        surveyStatus: 'completed',
-        answers: formattedAnswers,
-        audioFileUrl: audioUrl,
-        recordingDuration: _secondsRecorded,
-      );
+      final locationData = {
+        'latitude': _currentPosition!.latitude,
+        'longitude': _currentPosition!.longitude,
+        'altitude': _currentPosition!.altitude,
+        'accuracy_meters': _currentPosition!.accuracy,
+        'speed': _currentPosition!.speed,
+        'captured_at': DateTime.now().toUtc().toIso8601String(),
+      };
 
-      if (!mounted) return;
+      // Try uploading online
+      try {
+        String audioUrl = '';
+        if (audioPath != null && File(audioPath).existsSync()) {
+          audioUrl = await _surveyService.uploadAudio(File(audioPath), widget.acData['ac_no']);
+        }
 
-      showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (ctx) => AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: const [
-              Icon(Icons.check_circle, color: Colors.green, size: 60),
-              SizedBox(height: 16),
-              Text(
-                'सर्वेक्षण सफलतापूर्वक दर्ज हुआ!',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 8),
-              Text('ऑडियो और डेटा सुरक्षित रूप से सहेज लिया गया है।', textAlign: TextAlign.center),
-            ],
-          ),
-          actions: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF1E3A8A)),
-              onPressed: () {
-                Navigator.pop(ctx);
-                Navigator.pop(context);
-              },
-              child: const Text('वापस डैशबोर्ड पर जाएं', style: TextStyle(color: Colors.white)),
-            )
-          ],
-        ),
-      );
+        await _surveyService.submitSurvey(
+          districtName: widget.districtName,
+          acId: widget.acData['ac_no'],
+          respondentName: _textControllers[4]?.text.trim(),
+          respondentPhone: _textControllers[7]?.text.trim(),
+          respondentAge: int.tryParse(_textControllers[8]?.text.trim() ?? ''),
+          respondentGender: _answers[6]?.toString(),
+          surveyStatus: 'completed',
+          answers: formattedAnswers,
+          location: locationData,
+          audioFileUrl: audioUrl,
+          recordingDuration: _secondsRecorded,
+        );
+
+        if (!mounted) return;
+        _showSuccessDialog(isOfflineDraft: false);
+      } catch (networkError) {
+        // CORNER CASE: Offline / No Internet at location
+        // Save form response, local audio file path, and GPS to SQLite
+        await LocalDatabaseService.instance.insertDraft(
+          districtName: widget.districtName,
+          acId: widget.acData['ac_no'],
+          respondentName: _textControllers[4]?.text.trim(),
+          respondentPhone: _textControllers[7]?.text.trim(),
+          respondentAge: int.tryParse(_textControllers[8]?.text.trim() ?? ''),
+          respondentGender: _answers[6]?.toString(),
+          surveyStatus: 'completed',
+          answers: formattedAnswers,
+          location: locationData,
+          localAudioPath: audioPath ?? '',
+          recordingDuration: _secondsRecorded,
+        );
+
+        if (!mounted) return;
+        _showSuccessDialog(isOfflineDraft: true);
+      }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('सबमिशन विफल रहा: $e'), backgroundColor: Colors.red),
+        SnackBar(content: Text('त्रुटि: $e'), backgroundColor: Colors.red),
       );
     } finally {
       if (mounted) setState(() => _isSubmitting = false);
     }
+  }
+
+  void _showSuccessDialog({required bool isOfflineDraft}) {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              isOfflineDraft ? Icons.cloud_off_rounded : Icons.check_circle_rounded,
+              color: isOfflineDraft ? Colors.amber.shade700 : Colors.green,
+              size: 60,
+            ),
+            const SizedBox(height: 16),
+            Text(
+              isOfflineDraft ? 'ऑफलाइन ड्राफ्ट सुरक्षित हुआ!' : 'सर्वेक्षण सफलतापूर्वक दर्ज हुआ!',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              isOfflineDraft
+                  ? 'नेटवर्क न होने के कारण ऑडियो और फॉर्म डिवाइस में सुरक्षित कर लिया गया है। नेटवर्क आते ही यह स्वतः सिंक हो जाएगा।'
+                  : 'ऑडियो, GPS लोकेशन और डेटा Supabase पर सुरक्षित रूप से सहेज लिया गया है।',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 13, color: Colors.black87),
+            ),
+          ],
+        ),
+        actions: [
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: isOfflineDraft ? Colors.amber.shade800 : const Color(0xFF1E3A8A),
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pop(ctx);
+              Navigator.pop(context);
+            },
+            child: const Text('वापस डैशबोर्ड पर जाएं'),
+          )
+        ],
+      ),
+    );
   }
 
   void _handleScreenOut() {
@@ -269,29 +372,59 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
         backgroundColor: const Color(0xFF1E3A8A),
         foregroundColor: Colors.white,
         bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(36),
-          child: Container(
-            color: Colors.red.shade900,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: const [
-                    Icon(Icons.fiber_manual_record, color: Colors.white, size: 14),
-                    SizedBox(width: 6),
+          preferredSize: const Size.fromHeight(64),
+          child: Column(
+            children: [
+              // Audio Recording Active Bar
+              Container(
+                color: Colors.red.shade900,
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: const [
+                        Icon(Icons.fiber_manual_record, color: Colors.white, size: 14),
+                        SizedBox(width: 6),
+                        Text(
+                          'ऑडियो रिकॉर्डिंग चालू है (Audio Active)',
+                          style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
                     Text(
-                      'ऑडियो रिकॉर्डिंग चालू है (Audio Active)',
-                      style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                      _formatTimer(_secondsRecorded),
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
                     ),
                   ],
                 ),
-                Text(
-                  _formatTimer(_secondsRecorded),
-                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
+              ),
+
+              // Live GPS Bar in 3rd Page
+              Container(
+                color: _isGpsActive ? const Color(0xFF047857) : const Color(0xFFDC2626),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(_isGpsActive ? Icons.location_on : Icons.location_off, color: Colors.white, size: 14),
+                        const SizedBox(width: 6),
+                        Text(
+                          _isGpsActive ? 'GPS लाइव (Coordinates Locked)' : 'GPS बंद / अनुपलब्ध (Location Lost)',
+                          style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Text(
+                      _isGpsActive ? '±${_currentPosition?.accuracy.toStringAsFixed(1) ?? '0'}m' : 'DISABLED',
+                      style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
@@ -308,17 +441,20 @@ class _SurveyFormScreenState extends State<SurveyFormScreen> {
                       height: 56,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF1E3A8A),
+                          backgroundColor: _isGpsActive ? const Color(0xFF1E3A8A) : Colors.grey.shade400,
                           foregroundColor: Colors.white,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                          elevation: 4,
+                          elevation: _isGpsActive ? 4 : 0,
                         ),
-                        onPressed: _isSubmitting ? null : _handleSubmitSurvey,
+                        // SUBMIT BUTTON DISABLED UNTIL GPS IS ACTIVE
+                        onPressed: (_isSubmitting || !_isGpsActive) ? null : _handleSubmitSurvey,
                         child: _isSubmitting
                             ? const CircularProgressIndicator(color: Colors.white)
-                            : const Text(
-                                'सबमिट करें (SUBMIT FORM)',
-                                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                            : Text(
+                                !_isGpsActive
+                                    ? 'लोकेशन चालू करें (Enable GPS to Submit)'
+                                    : 'सबमिट करें (SUBMIT FORM)',
+                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                               ),
                       ),
                     ),
