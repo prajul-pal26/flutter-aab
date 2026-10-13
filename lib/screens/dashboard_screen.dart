@@ -49,6 +49,28 @@ class _DashboardScreenState extends State<DashboardScreen> {
   List<Offset> _acSurveyPoints = [];
   Rect _acBoundingBox = Rect.zero;
   bool _isLoadingMap = false;
+  bool _isUserInsideAC = false;
+
+  // Ray Casting Algorithm to check if GPS coordinate is inside AC Polygon
+  bool _checkIfPointInsidePolygons(Offset point, List<List<Offset>> polygons) {
+    if (polygons.isEmpty) return false;
+    for (final poly in polygons) {
+      if (poly.length < 3) continue;
+      bool inside = false;
+      int j = poly.length - 1;
+      for (int i = 0; i < poly.length; i++) {
+        final pi = poly[i];
+        final pj = poly[j];
+        if ((pi.dy > point.dy) != (pj.dy > point.dy) &&
+            point.dx < (pj.dx - pi.dx) * (point.dy - pi.dy) / (pj.dy - pi.dy) + pi.dx) {
+          inside = !inside;
+        }
+        j = i;
+      }
+      if (inside) return true;
+    }
+    return false;
+  }
 
   @override
   void initState() {
@@ -160,9 +182,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
         ),
       ).listen((Position position) {
         if (mounted) {
+          bool inside = false;
+          if (_acPolygons.isNotEmpty) {
+            inside = _checkIfPointInsidePolygons(
+              Offset(position.longitude, position.latitude),
+              _acPolygons,
+            );
+          }
           setState(() {
             _isGpsLive = true;
             _currentPosition = position;
+            _isUserInsideAC = inside;
             _gpsStatusText =
                 'GPS लाइव: ${position.latitude.toStringAsFixed(5)}, ${position.longitude.toStringAsFixed(5)} (±${position.accuracy.toStringAsFixed(1)}m)';
           });
@@ -270,10 +300,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
       final pinLocations = await _surveyService.getACSurveyLocations(acNo);
       final List<Offset> pins = pinLocations.map((p) => Offset(p['lng']!, p['lat']!)).toList();
 
+      // Check if current user GPS position is inside AC polygons
+      bool inside = false;
+      if (_currentPosition != null && polygons.isNotEmpty) {
+        inside = _checkIfPointInsidePolygons(
+          Offset(_currentPosition!.longitude, _currentPosition!.latitude),
+          polygons,
+        );
+      }
+
       if (mounted) {
         setState(() {
           _acPolygons = polygons;
           _acSurveyPoints = pins;
+          _isUserInsideAC = inside;
           _acBoundingBox = polygons.isNotEmpty
               ? Rect.fromLTRB(minX, minY, maxX, maxY)
               : Rect.zero;
@@ -326,7 +366,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final bool canStartForm = _selectedDistrict != null && _selectedAC != null && _isGpsLive;
+    // FORM CAN ONLY BE STARTED IF:
+    // 1. District is selected
+    // 2. AC is selected
+    // 3. GPS is Live
+    // 4. User is PHYSICALLY INSIDE the selected AC boundary polygon
+    final bool canStartForm = _selectedDistrict != null &&
+        _selectedAC != null &&
+        _isGpsLive &&
+        _isUserInsideAC;
 
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FA),
@@ -489,26 +537,63 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
                   const SizedBox(height: 24),
 
-                  // FORM BUTTON (Disabled until GPS is LIVE and District/AC selected)
+                  // FORM BUTTON (Disabled if GPS is off OR if user is OUTSIDE selected AC)
                   SizedBox(
                     height: 54,
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: canStartForm ? const Color(0xFF1E3A8A) : Colors.grey.shade400,
+                        backgroundColor: canStartForm
+                            ? const Color(0xFF059669) // Green when ready & inside AC
+                            : (_isGpsLive && !_isUserInsideAC && _selectedAC != null)
+                                ? Colors.red.shade700 // Red warning when outside
+                                : Colors.grey.shade400,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                         elevation: canStartForm ? 3 : 0,
                       ),
                       onPressed: canStartForm ? _navigateToFormDirectly : null,
-                      icon: const Icon(Icons.assignment_add),
+                      icon: Icon(
+                        canStartForm
+                            ? Icons.assignment_turned_in
+                            : (_isGpsLive && !_isUserInsideAC && _selectedAC != null)
+                                ? Icons.wrong_location
+                                : Icons.assignment_add,
+                      ),
                       label: Text(
                         !_isGpsLive
                             ? 'GPS सिग्नल की प्रतीक्षा है... (GPS Disabled)'
-                            : 'FORM भरें (Start Survey)',
-                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            : (_selectedAC != null && !_isUserInsideAC)
+                                ? 'विधानसभा क्षेत्र से बाहर हैं (Outside Constituency)'
+                                : 'FORM भरें (Start Survey)',
+                        style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
+
+                  // Location warning banner if user is outside
+                  if (_selectedAC != null && _isGpsLive && !_isUserInsideAC) ...[
+                    const SizedBox(height: 8),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.red.shade50,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.red.shade300),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.info_outline, color: Color(0xFFDC2626), size: 16),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              'आप [${_selectedAC!['ac_no']}] ${_selectedAC!['ac_name_hi']} की सीमा से बाहर हैं। सर्वेक्षण केवल क्षेत्र के अंदर ही भरा जा सकता है।',
+                              style: TextStyle(color: Colors.red.shade900, fontSize: 12, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
 
                   const SizedBox(height: 24),
 
@@ -523,18 +608,42 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                         Row(
                           children: [
-                            Container(
-                              width: 8,
-                              height: 8,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFFDC2626),
-                                shape: BoxShape.circle,
-                              ),
+                            // Green Live User Legend
+                            Row(
+                              children: [
+                                Container(
+                                  width: 8,
+                                  height: 8,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFF059669),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
+                                const Text(
+                                  'लाइव लोकेशन',
+                                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Color(0xFF059669)),
+                                ),
+                              ],
                             ),
-                            const SizedBox(width: 4),
-                            Text(
-                              '${_acSurveyPoints.length} फॉर्म लोकेशन',
-                              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Color(0xFFDC2626)),
+                            const SizedBox(width: 10),
+                            // Red Survey Submissions Legend
+                            Row(
+                              children: [
+                                Container(
+                                  width: 8,
+                                  height: 8,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFFDC2626),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
+                                Text(
+                                  '${_acSurveyPoints.length} फॉर्म',
+                                  style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Color(0xFFDC2626)),
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -545,14 +654,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       elevation: 1.5,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
-                        side: BorderSide(color: Colors.blue.shade100),
+                        side: BorderSide(
+                          color: _isUserInsideAC ? Colors.green.shade200 : Colors.red.shade200,
+                          width: 1.5,
+                        ),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(16),
                         child: Container(
-                          height: 240,
+                          height: 250,
                           width: double.infinity,
-                          color: const Color(0xFFF1F5F9),
+                          color: const Color(0xFFF8FAFC),
                           child: _isLoadingMap
                               ? const Center(
                                   child: Column(
@@ -574,10 +686,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   : Stack(
                                       children: [
                                         CustomPaint(
-                                          size: const Size(double.infinity, 240),
+                                          size: const Size(double.infinity, 250),
                                           painter: ACMapPainter(
                                             polygons: _acPolygons,
                                             surveyPoints: _acSurveyPoints,
+                                            liveUserPosition: _currentPosition != null
+                                                ? Offset(_currentPosition!.longitude, _currentPosition!.latitude)
+                                                : null,
+                                            isUserInside: _isUserInsideAC,
                                             boundingBox: _acBoundingBox,
                                           ),
                                         ),
@@ -585,19 +701,38 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                           bottom: 10,
                                           left: 12,
                                           child: Container(
-                                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                             decoration: BoxDecoration(
-                                              color: Colors.white.withValues(alpha: 0.9),
+                                              color: Colors.white.withValues(alpha: 0.95),
                                               borderRadius: BorderRadius.circular(8),
                                               border: Border.all(color: Colors.grey.shade300),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: Colors.black.withValues(alpha: 0.08),
+                                                  blurRadius: 4,
+                                                )
+                                              ],
                                             ),
-                                            child: Text(
-                                              '[${_selectedAC!['ac_no']}] ${_selectedAC!['ac_name_hi']}',
-                                              style: const TextStyle(
-                                                fontSize: 11,
-                                                fontWeight: FontWeight.bold,
-                                                color: Color(0xFF1E3A8A),
-                                              ),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: [
+                                                Icon(
+                                                  _isUserInsideAC ? Icons.check_circle : Icons.cancel,
+                                                  color: _isUserInsideAC ? const Color(0xFF059669) : const Color(0xFFDC2626),
+                                                  size: 14,
+                                                ),
+                                                const SizedBox(width: 5),
+                                                Text(
+                                                  _isUserInsideAC
+                                                      ? '[${_selectedAC!['ac_no']}] ${_selectedAC!['ac_name_hi']} (क्षेत्र के अंदर)'
+                                                      : '[${_selectedAC!['ac_no']}] ${_selectedAC!['ac_name_hi']} (क्षेत्र के बाहर)',
+                                                  style: TextStyle(
+                                                    fontSize: 11,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: _isUserInsideAC ? const Color(0xFF059669) : const Color(0xFFDC2626),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
                                           ),
                                         ),

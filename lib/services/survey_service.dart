@@ -66,17 +66,19 @@ class SurveyService {
     try {
       final res = await client
           .from('survey_responses')
-          .select('location')
-          .eq('ac_id', acId)
-          .not('location', 'is', null);
+          .select('answers')
+          .eq('ac_id', acId);
 
       final List<Map<String, double>> points = [];
       for (var row in res as List) {
-        final loc = row['location'];
-        if (loc != null && loc['latitude'] != null && loc['longitude'] != null) {
-          final lat = (loc['latitude'] as num).toDouble();
-          final lng = (loc['longitude'] as num).toDouble();
-          points.add({'lat': lat, 'lng': lng});
+        final answers = row['answers'];
+        if (answers != null && answers is Map) {
+          final loc = answers['location'];
+          if (loc != null && loc['latitude'] != null && loc['longitude'] != null) {
+            final lat = (loc['latitude'] as num).toDouble();
+            final lng = (loc['longitude'] as num).toDouble();
+            points.add({'lat': lat, 'lng': lng});
+          }
         }
       }
       return points;
@@ -110,21 +112,31 @@ class SurveyService {
   }) async {
     final user = client.auth.currentUser;
 
-    await client.from('survey_responses').insert({
+    // Store location and district_name inside answers JSONB so it never fails
+    // regardless of whether extra top-level columns exist in schema
+    final Map<String, dynamic> enrichedAnswers = Map<String, dynamic>.from(answers);
+    if (districtName.isNotEmpty) {
+      enrichedAnswers['district_name'] = districtName;
+    }
+    if (location != null) {
+      enrichedAnswers['location'] = location;
+    }
+
+    final payload = {
       'surveyor_id': user?.id,
-      'district_name': districtName,
       'ac_id': acId,
       'respondent_name': respondentName,
       'respondent_phone': respondentPhone,
       'respondent_age': respondentAge,
       'respondent_gender': respondentGender,
       'survey_status': surveyStatus,
-      'answers': answers,
-      'location': location,
+      'answers': enrichedAnswers,
       'audio_file_url': audioFileUrl,
       'recording_duration_seconds': recordingDuration,
       'submitted_at': DateTime.now().toUtc().toIso8601String(),
-    });
+    };
+
+    await client.from('survey_responses').insert(payload);
   }
 
   // Auto-sync all local drafts to Supabase

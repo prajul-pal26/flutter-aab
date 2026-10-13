@@ -4,11 +4,15 @@ import 'package:flutter/material.dart';
 class ACMapPainter extends CustomPainter {
   final List<List<Offset>> polygons;
   final List<Offset> surveyPoints;
+  final Offset? liveUserPosition;
+  final bool isUserInside;
   final Rect boundingBox;
 
   ACMapPainter({
     required this.polygons,
     required this.surveyPoints,
+    required this.liveUserPosition,
+    required this.isUserInside,
     required this.boundingBox,
   });
 
@@ -16,15 +20,15 @@ class ACMapPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     if (polygons.isEmpty || boundingBox.isEmpty) return;
 
-    // Background fill
-    final bgPaint = Paint()..color = const Color(0xFFF1F5F9);
+    // Background card fill
+    final bgPaint = Paint()..color = const Color(0xFFF8FAFC);
     canvas.drawRRect(
       RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(16)),
       bgPaint,
     );
 
     // Padding inside canvas
-    const padding = 20.0;
+    const padding = 28.0;
     final drawWidth = size.width - 2 * padding;
     final drawHeight = size.height - 2 * padding;
 
@@ -44,14 +48,14 @@ class ACMapPainter extends CustomPainter {
       return Offset(x, y);
     }
 
-    // AC Boundary Paints
+    // AC Boundary Fill & Stroke
     final polyFillPaint = Paint()
-      ..color = const Color(0xFF1E3A8A).withValues(alpha: 0.12)
+      ..color = const Color(0xFF1E3A8A).withValues(alpha: 0.10)
       ..style = PaintingStyle.fill;
 
     final polyStrokePaint = Paint()
       ..color = const Color(0xFF1E3A8A)
-      ..strokeWidth = 2.0
+      ..strokeWidth = 2.2
       ..style = PaintingStyle.stroke
       ..strokeJoin = StrokeJoin.round;
 
@@ -70,34 +74,88 @@ class ACMapPainter extends CustomPainter {
       canvas.drawPath(path, polyStrokePaint);
     }
 
-    // Survey Submission Pin Points
-    final pinOuterPaint = Paint()
-      ..color = Colors.white
-      ..style = PaintingStyle.fill;
-
-    final pinInnerPaint = Paint()
-      ..color = const Color(0xFFDC2626) // Vibrant Red Dot
-      ..style = PaintingStyle.fill;
-
-    final pinShadowPaint = Paint()
-      ..color = Colors.black.withValues(alpha: 0.25)
-      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2);
-
+    // 🔴 1. DRAW SUBMITTED SURVEY PINS (Red Map Pins)
     for (final pt in surveyPoints) {
       final canvasPt = transform(pt);
-      // Small shadow
-      canvas.drawCircle(canvasPt + const Offset(0, 1.5), 5.5, pinShadowPaint);
-      // White rim
-      canvas.drawCircle(canvasPt, 5.0, pinOuterPaint);
-      // Red center
-      canvas.drawCircle(canvasPt, 3.5, pinInnerPaint);
+      _drawMapPin(canvas: canvas, tip: canvasPt, pinColor: const Color(0xFFDC2626));
     }
+
+    // 🟢 2. DRAW LIVE USER LOCATION PIN (Green Round Button with Stick)
+    if (liveUserPosition != null) {
+      final liveCanvasPt = transform(liveUserPosition!);
+
+      // Draw radar ripple circle
+      final ripplePaint = Paint()
+        ..color = const Color(0xFF10B981).withValues(alpha: 0.22)
+        ..style = PaintingStyle.fill;
+      canvas.drawCircle(liveCanvasPt, 18, ripplePaint);
+
+      // Draw Live User Pin (Green)
+      _drawMapPin(
+        canvas: canvas,
+        tip: liveCanvasPt,
+        pinColor: const Color(0xFF059669),
+        isLive: true,
+      );
+    }
+  }
+
+  // Draw 📍 Realistic Location Pin (Round head + pointed stick)
+  void _drawMapPin({
+    required Canvas canvas,
+    required Offset tip,
+    required Color pinColor,
+    bool isLive = false,
+  }) {
+    const pinRadius = 7.0;
+    const pinHeight = 18.0;
+    final headCenter = Offset(tip.dx, tip.dy - pinHeight + pinRadius);
+
+    // Drop shadow
+    final shadowPaint = Paint()
+      ..color = Colors.black.withValues(alpha: 0.28)
+      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2);
+    canvas.drawOval(
+      Rect.fromCenter(center: tip + const Offset(0, 1.5), width: 7, height: 3.5),
+      shadowPaint,
+    );
+
+    // Stick path from bottom tip to round head
+    final pinPath = Path();
+    pinPath.moveTo(tip.dx, tip.dy);
+    pinPath.lineTo(headCenter.dx - pinRadius * 0.75, headCenter.dy + pinRadius * 0.4);
+    pinPath.arcToPoint(
+      Offset(headCenter.dx + pinRadius * 0.75, headCenter.dy + pinRadius * 0.4),
+      radius: const Radius.circular(pinRadius),
+      clockwise: true,
+    );
+    pinPath.close();
+
+    final fillPaint = Paint()
+      ..color = pinColor
+      ..style = PaintingStyle.fill;
+
+    final borderPaint = Paint()
+      ..color = Colors.white
+      ..strokeWidth = 1.2
+      ..style = PaintingStyle.stroke;
+
+    canvas.drawPath(pinPath, fillPaint);
+    canvas.drawPath(pinPath, borderPaint);
+
+    // Inner White Dot
+    final innerDotPaint = Paint()
+      ..color = Colors.white
+      ..style = PaintingStyle.fill;
+    canvas.drawCircle(headCenter, isLive ? 3.0 : 2.5, innerDotPaint);
   }
 
   @override
   bool shouldRepaint(covariant ACMapPainter oldDelegate) {
     return oldDelegate.polygons != polygons ||
         oldDelegate.surveyPoints != surveyPoints ||
+        oldDelegate.liveUserPosition != liveUserPosition ||
+        oldDelegate.isUserInside != isUserInside ||
         oldDelegate.boundingBox != boundingBox;
   }
 }
