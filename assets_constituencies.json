@@ -1,0 +1,2522 @@
+{
+  "districts": [
+    "Agra Mahanagar",
+    "Agra Zila",
+    "Aligarh Mahanagar",
+    "Aligarh Zila",
+    "Ambedkar Nagar",
+    "Amethi",
+    "Amroha",
+    "Aonla",
+    "Auraiya",
+    "Ayodhya Mahanagar",
+    "Ayodhya Zila",
+    "Azamgarh",
+    "Baghpat",
+    "Bahraich",
+    "Ballia",
+    "Balrampur",
+    "Banda",
+    "Barabanki",
+    "Bareilly Mahanagar",
+    "Bareilly Zila",
+    "Basti",
+    "Bhadohi",
+    "Bijnor",
+    "Budaun",
+    "Bulandshahar",
+    "Chandauli",
+    "Chitrakoot",
+    "Deoria",
+    "Etah",
+    "Etawah",
+    "Farrukhabad",
+    "Fatehpur",
+    "Firozabad Mahanagar",
+    "Firozabad Zila",
+    "Gautam Buddha Nagar",
+    "Ghaziabad Mahanagar",
+    "Ghaziabad Zila",
+    "Ghazipur",
+    "Gonda",
+    "Gorakhpur Mahanagar",
+    "Gorakhpur Zila",
+    "Hamirpur",
+    "Hapur",
+    "Hardoi",
+    "Hathras",
+    "Jalaun",
+    "Jaunpur",
+    "Jhansi Mahanagar",
+    "Jhansi Zila",
+    "Kannauj",
+    "Kanpur Dehat",
+    "Kanpur Gramin",
+    "Kanpur Mahanagar North",
+    "Kanpur Mahanagar South",
+    "Kasganj",
+    "Kaushambi",
+    "Kushinagar",
+    "Lakhimpur",
+    "Lalganj",
+    "Lalitpur",
+    "Lucknow Mahanagar",
+    "Lucknow Zila",
+    "Machhlishahar",
+    "Maharajganj",
+    "Mahoba",
+    "Mainpuri",
+    "Mathura Mahanagar",
+    "Mathura Zila",
+    "Mau",
+    "Meerut Mahanagar",
+    "Meerut Zila",
+    "Mirzapur",
+    "Moradabad Mahanagar",
+    "Moradabad Zila",
+    "Muzaffarnagar",
+    "Noida Mahanagar",
+    "Pilibhit",
+    "Pratapgarh",
+    "Prayagraj Mahanagar",
+    "Prayagraj Zila Gangapar",
+    "Prayagraj Zila Yamunapar",
+    "Raebareli",
+    "Rampur",
+    "Saharanpur Mahanagar",
+    "Saharanpur Zila",
+    "Sambhal",
+    "Sant Kabir Nagar",
+    "Shahjahanpur Mahanagar",
+    "Shahjahanpur Zila",
+    "Shamli",
+    "Shravasti",
+    "Siddharthnagar",
+    "Sitapur",
+    "Sonbhadra",
+    "Sultanpur",
+    "Unnao",
+    "Varanasi Mahanagar",
+    "Varanasi Zila"
+  ],
+  "constituencies": [
+    {
+      "ac_no": 1,
+      "ac_en": "Behat",
+      "ac_hi": "बेहट",
+      "district": "Saharanpur Zila"
+    },
+    {
+      "ac_no": 2,
+      "ac_en": "Nakur",
+      "ac_hi": "नकुड़",
+      "district": "Saharanpur Zila"
+    },
+    {
+      "ac_no": 3,
+      "ac_en": "Saharanpur Nagar",
+      "ac_hi": "सहारनपुर नगर",
+      "district": "Saharanpur Mahanagar"
+    },
+    {
+      "ac_no": 4,
+      "ac_en": "Saharanpur Dehat",
+      "ac_hi": "सहारनपुर देहात",
+      "district": "Saharanpur Mahanagar"
+    },
+    {
+      "ac_no": 5,
+      "ac_en": "Deoband",
+      "ac_hi": "देवबंद",
+      "district": "Saharanpur Zila"
+    },
+    {
+      "ac_no": 6,
+      "ac_en": "Rampur Maniharan",
+      "ac_hi": "रामपुर मनिहारन",
+      "district": "Saharanpur Zila"
+    },
+    {
+      "ac_no": 7,
+      "ac_en": "Gangoh",
+      "ac_hi": "गंगोह",
+      "district": "Saharanpur Zila"
+    },
+    {
+      "ac_no": 8,
+      "ac_en": "Kairana",
+      "ac_hi": "कैराना",
+      "district": "Shamli"
+    },
+    {
+      "ac_no": 9,
+      "ac_en": "Thana Bhawan",
+      "ac_hi": "थानाभवन",
+      "district": "Shamli"
+    },
+    {
+      "ac_no": 10,
+      "ac_en": "Shamli",
+      "ac_hi": "शामली",
+      "district": "Shamli"
+    },
+    {
+      "ac_no": 11,
+      "ac_en": "Budhana",
+      "ac_hi": "बुढ़ाना",
+      "district": "Muzaffarnagar"
+    },
+    {
+      "ac_no": 12,
+      "ac_en": "Charthawal",
+      "ac_hi": "चरथावल",
+      "district": "Muzaffarnagar"
+    },
+    {
+      "ac_no": 13,
+      "ac_en": "Purqazi",
+      "ac_hi": "पुरकाजी",
+      "district": "Muzaffarnagar"
+    },
+    {
+      "ac_no": 14,
+      "ac_en": "Muzaffarnagar Sadar",
+      "ac_hi": "मुजफ्फरनगर",
+      "district": "Muzaffarnagar"
+    },
+    {
+      "ac_no": 15,
+      "ac_en": "Khatauli",
+      "ac_hi": "खतौली",
+      "district": "Muzaffarnagar"
+    },
+    {
+      "ac_no": 16,
+      "ac_en": "Meerapur",
+      "ac_hi": "मीरापुर",
+      "district": "Muzaffarnagar"
+    },
+    {
+      "ac_no": 17,
+      "ac_en": "Najibabad",
+      "ac_hi": "नजीबाबाद",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 18,
+      "ac_en": "Nagina",
+      "ac_hi": "नगीना",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 19,
+      "ac_en": "Barhapur",
+      "ac_hi": "बढ़ापुर",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 20,
+      "ac_en": "Dhampur",
+      "ac_hi": "धामपुर",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 21,
+      "ac_en": "Nehtaur",
+      "ac_hi": "नहटौर",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 22,
+      "ac_en": "Bijnor",
+      "ac_hi": "बिजनौर",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 23,
+      "ac_en": "Chandpur",
+      "ac_hi": "चांदपुर",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 24,
+      "ac_en": "Noorpur",
+      "ac_hi": "नूरपुर",
+      "district": "Bijnor"
+    },
+    {
+      "ac_no": 25,
+      "ac_en": "Kanth",
+      "ac_hi": "कांठ",
+      "district": "Moradabad Zila"
+    },
+    {
+      "ac_no": 26,
+      "ac_en": "Thakurdwara",
+      "ac_hi": "ठाकुरद्वारा",
+      "district": "Moradabad Zila"
+    },
+    {
+      "ac_no": 27,
+      "ac_en": "Moradabad Rural",
+      "ac_hi": "मुरादाबाद देहात",
+      "district": "Moradabad Mahanagar"
+    },
+    {
+      "ac_no": 28,
+      "ac_en": "Moradabad Nagar",
+      "ac_hi": "मुरादाबाद नगर",
+      "district": "Moradabad Mahanagar"
+    },
+    {
+      "ac_no": 29,
+      "ac_en": "Kundarki",
+      "ac_hi": "कुन्दरकी",
+      "district": "Moradabad Zila"
+    },
+    {
+      "ac_no": 30,
+      "ac_en": "Bilari",
+      "ac_hi": "बिलारी",
+      "district": "Moradabad Zila"
+    },
+    {
+      "ac_no": 31,
+      "ac_en": "Chandausi",
+      "ac_hi": "चन्दौसी",
+      "district": "Sambhal"
+    },
+    {
+      "ac_no": 32,
+      "ac_en": "Asmoli",
+      "ac_hi": "असमौली",
+      "district": "Sambhal"
+    },
+    {
+      "ac_no": 33,
+      "ac_en": "Sambhal",
+      "ac_hi": "संभल",
+      "district": "Sambhal"
+    },
+    {
+      "ac_no": 34,
+      "ac_en": "Suar",
+      "ac_hi": "स्वार",
+      "district": "Rampur"
+    },
+    {
+      "ac_no": 35,
+      "ac_en": "Chamraua",
+      "ac_hi": "चमरौआ",
+      "district": "Rampur"
+    },
+    {
+      "ac_no": 36,
+      "ac_en": "Bilaspur",
+      "ac_hi": "बिलासपुर",
+      "district": "Rampur"
+    },
+    {
+      "ac_no": 37,
+      "ac_en": "Rampur",
+      "ac_hi": "रामपुर",
+      "district": "Rampur"
+    },
+    {
+      "ac_no": 38,
+      "ac_en": "Milak",
+      "ac_hi": "मिलक",
+      "district": "Rampur"
+    },
+    {
+      "ac_no": 39,
+      "ac_en": "Dhanaura",
+      "ac_hi": "धनौरा",
+      "district": "Amroha"
+    },
+    {
+      "ac_no": 40,
+      "ac_en": "Naugawan Sadat",
+      "ac_hi": "नौगावाँ सादात",
+      "district": "Amroha"
+    },
+    {
+      "ac_no": 41,
+      "ac_en": "Amroha",
+      "ac_hi": "अमरोहा",
+      "district": "Amroha"
+    },
+    {
+      "ac_no": 42,
+      "ac_en": "Hasanpur",
+      "ac_hi": "हसनपुर",
+      "district": "Amroha"
+    },
+    {
+      "ac_no": 43,
+      "ac_en": "Siwalkhas",
+      "ac_hi": "सिवालखास",
+      "district": "Meerut Zila"
+    },
+    {
+      "ac_no": 44,
+      "ac_en": "Sardhana",
+      "ac_hi": "सरधना",
+      "district": "Meerut Zila"
+    },
+    {
+      "ac_no": 45,
+      "ac_en": "Hastinapur",
+      "ac_hi": "हस्तिनापुर",
+      "district": "Meerut Zila"
+    },
+    {
+      "ac_no": 46,
+      "ac_en": "Kithore",
+      "ac_hi": "किठौर",
+      "district": "Meerut Zila"
+    },
+    {
+      "ac_no": 47,
+      "ac_en": "Meerut Cantt",
+      "ac_hi": "मेरठ कैन्ट",
+      "district": "Meerut Mahanagar"
+    },
+    {
+      "ac_no": 48,
+      "ac_en": "Meerut City",
+      "ac_hi": "मेरठ शहर",
+      "district": "Meerut Mahanagar"
+    },
+    {
+      "ac_no": 49,
+      "ac_en": "Meerut South",
+      "ac_hi": "मेरठ दक्षिण",
+      "district": "Meerut Mahanagar"
+    },
+    {
+      "ac_no": 50,
+      "ac_en": "Chhaprauli",
+      "ac_hi": "छपरौली",
+      "district": "Baghpat"
+    },
+    {
+      "ac_no": 51,
+      "ac_en": "Baraut",
+      "ac_hi": "बड़ौत",
+      "district": "Baghpat"
+    },
+    {
+      "ac_no": 52,
+      "ac_en": "Baghpat",
+      "ac_hi": "बागपत",
+      "district": "Baghpat"
+    },
+    {
+      "ac_no": 53,
+      "ac_en": "Loni",
+      "ac_hi": "लोनी",
+      "district": "Ghaziabad Zila"
+    },
+    {
+      "ac_no": 54,
+      "ac_en": "Muradnagar",
+      "ac_hi": "मुरादनगर",
+      "district": "Ghaziabad Mahanagar"
+    },
+    {
+      "ac_no": 55,
+      "ac_en": "Sahibabad",
+      "ac_hi": "साहिबाबाद",
+      "district": "Ghaziabad Mahanagar"
+    },
+    {
+      "ac_no": 56,
+      "ac_en": "Ghaziabad",
+      "ac_hi": "गाजियाबाद",
+      "district": "Ghaziabad Mahanagar"
+    },
+    {
+      "ac_no": 57,
+      "ac_en": "Modi Nagar",
+      "ac_hi": "मोदीनगर",
+      "district": "Ghaziabad Zila"
+    },
+    {
+      "ac_no": 58,
+      "ac_en": "Dholana",
+      "ac_hi": "धौलाना",
+      "district": "Hapur"
+    },
+    {
+      "ac_no": 59,
+      "ac_en": "Hapur",
+      "ac_hi": "हापुड़",
+      "district": "Hapur"
+    },
+    {
+      "ac_no": 60,
+      "ac_en": "Garhmukteshwar",
+      "ac_hi": "गढ़मुक्तेश्वर",
+      "district": "Hapur"
+    },
+    {
+      "ac_no": 61,
+      "ac_en": "Noida",
+      "ac_hi": "नोएडा",
+      "district": "Noida Mahanagar"
+    },
+    {
+      "ac_no": 62,
+      "ac_en": "Dadri",
+      "ac_hi": "दादरी",
+      "district": "Gautam Buddha Nagar"
+    },
+    {
+      "ac_no": 63,
+      "ac_en": "Jewar",
+      "ac_hi": "जेवर",
+      "district": "Gautam Buddha Nagar"
+    },
+    {
+      "ac_no": 64,
+      "ac_en": "Sikandrabad",
+      "ac_hi": "सिकन्द्राबाद",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 65,
+      "ac_en": "Bulandshahr",
+      "ac_hi": "बुलंदशहर",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 66,
+      "ac_en": "Siana",
+      "ac_hi": "स्याना",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 67,
+      "ac_en": "Anupshahr",
+      "ac_hi": "अनुपशहर",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 68,
+      "ac_en": "Debai",
+      "ac_hi": "डिबाई",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 69,
+      "ac_en": "Shikarpur",
+      "ac_hi": "शिकारपुर",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 70,
+      "ac_en": "Khurja",
+      "ac_hi": "खुर्जा",
+      "district": "Bulandshahar"
+    },
+    {
+      "ac_no": 71,
+      "ac_en": "Khair",
+      "ac_hi": "खैर",
+      "district": "Aligarh Zila"
+    },
+    {
+      "ac_no": 72,
+      "ac_en": "Barauli",
+      "ac_hi": "बरौली",
+      "district": "Aligarh Zila"
+    },
+    {
+      "ac_no": 73,
+      "ac_en": "Atrauli",
+      "ac_hi": "अतरौली",
+      "district": "Aligarh Zila"
+    },
+    {
+      "ac_no": 74,
+      "ac_en": "Chharra",
+      "ac_hi": "छर्रा",
+      "district": "Aligarh Zila"
+    },
+    {
+      "ac_no": 75,
+      "ac_en": "Koil",
+      "ac_hi": "कोल",
+      "district": "Aligarh Mahanagar"
+    },
+    {
+      "ac_no": 76,
+      "ac_en": "Aligarh",
+      "ac_hi": "अलीगढ़",
+      "district": "Aligarh Mahanagar"
+    },
+    {
+      "ac_no": 77,
+      "ac_en": "Iglas",
+      "ac_hi": "इगलास",
+      "district": "Aligarh Zila"
+    },
+    {
+      "ac_no": 78,
+      "ac_en": "Hathras",
+      "ac_hi": "हाथरस",
+      "district": "Hathras"
+    },
+    {
+      "ac_no": 79,
+      "ac_en": "Sadabad",
+      "ac_hi": "सादाबाद",
+      "district": "Hathras"
+    },
+    {
+      "ac_no": 80,
+      "ac_en": "Sikandra Rao",
+      "ac_hi": "सिकन्द्रा राऊ",
+      "district": "Hathras"
+    },
+    {
+      "ac_no": 81,
+      "ac_en": "Chhata",
+      "ac_hi": "छाता",
+      "district": "Mathura Zila"
+    },
+    {
+      "ac_no": 82,
+      "ac_en": "Mant",
+      "ac_hi": "मांट",
+      "district": "Mathura Zila"
+    },
+    {
+      "ac_no": 83,
+      "ac_en": "Govardhan",
+      "ac_hi": "गोवर्धन",
+      "district": "Mathura Mahanagar"
+    },
+    {
+      "ac_no": 84,
+      "ac_en": "Mathura",
+      "ac_hi": "मथुरा",
+      "district": "Mathura Mahanagar"
+    },
+    {
+      "ac_no": 85,
+      "ac_en": "Baldev",
+      "ac_hi": "बलदेव",
+      "district": "Mathura Zila"
+    },
+    {
+      "ac_no": 86,
+      "ac_en": "Etmadpur",
+      "ac_hi": "एत्मादपुर",
+      "district": "Agra Mahanagar"
+    },
+    {
+      "ac_no": 87,
+      "ac_en": "Agra Cantt",
+      "ac_hi": "आगरा कैन्ट",
+      "district": "Agra Mahanagar"
+    },
+    {
+      "ac_no": 88,
+      "ac_en": "Agra South",
+      "ac_hi": "आगरा दक्षिण",
+      "district": "Agra Mahanagar"
+    },
+    {
+      "ac_no": 89,
+      "ac_en": "Agra North",
+      "ac_hi": "आगरा उत्तर",
+      "district": "Agra Mahanagar"
+    },
+    {
+      "ac_no": 90,
+      "ac_en": "Agra Rural",
+      "ac_hi": "आगरा ग्रामीण",
+      "district": "Agra Zila"
+    },
+    {
+      "ac_no": 91,
+      "ac_en": "Fatehpur Sikri",
+      "ac_hi": "फतेहपुर सीकरी",
+      "district": "Agra Zila"
+    },
+    {
+      "ac_no": 92,
+      "ac_en": "Kheragarh",
+      "ac_hi": "खेरागढ़",
+      "district": "Agra Zila"
+    },
+    {
+      "ac_no": 93,
+      "ac_en": "Fatehabad",
+      "ac_hi": "फतेहाबाद",
+      "district": "Agra Zila"
+    },
+    {
+      "ac_no": 94,
+      "ac_en": "Bah",
+      "ac_hi": "बाह",
+      "district": "Agra Zila"
+    },
+    {
+      "ac_no": 95,
+      "ac_en": "Tundla",
+      "ac_hi": "टून्डला",
+      "district": "Firozabad Zila"
+    },
+    {
+      "ac_no": 96,
+      "ac_en": "Jasrana",
+      "ac_hi": "जसराना",
+      "district": "Firozabad Zila"
+    },
+    {
+      "ac_no": 97,
+      "ac_en": "Firozabad",
+      "ac_hi": "फिरोजाबाद",
+      "district": "Firozabad Mahanagar"
+    },
+    {
+      "ac_no": 98,
+      "ac_en": "Shikohabad",
+      "ac_hi": "शिकोहाबाद",
+      "district": "Firozabad Mahanagar"
+    },
+    {
+      "ac_no": 99,
+      "ac_en": "Sirsaganj",
+      "ac_hi": "सिरसागंज",
+      "district": "Firozabad Zila"
+    },
+    {
+      "ac_no": 100,
+      "ac_en": "Kasganj",
+      "ac_hi": "कासगंज",
+      "district": "Kasganj"
+    },
+    {
+      "ac_no": 101,
+      "ac_en": "Amanpur",
+      "ac_hi": "अमांपुर",
+      "district": "Kasganj"
+    },
+    {
+      "ac_no": 102,
+      "ac_en": "Patiyali",
+      "ac_hi": "पटियाली",
+      "district": "Kasganj"
+    },
+    {
+      "ac_no": 103,
+      "ac_en": "Aliganj",
+      "ac_hi": "अलीगंज",
+      "district": "Etah"
+    },
+    {
+      "ac_no": 104,
+      "ac_en": "Etah",
+      "ac_hi": "एटा",
+      "district": "Etah"
+    },
+    {
+      "ac_no": 105,
+      "ac_en": "Marhara",
+      "ac_hi": "मारहरा",
+      "district": "Etah"
+    },
+    {
+      "ac_no": 106,
+      "ac_en": "Jalesar",
+      "ac_hi": "जलेसर",
+      "district": "Etah"
+    },
+    {
+      "ac_no": 107,
+      "ac_en": "Mainpuri",
+      "ac_hi": "मैनपुरी",
+      "district": "Mainpuri"
+    },
+    {
+      "ac_no": 108,
+      "ac_en": "Bhongaon",
+      "ac_hi": "भोगाँव",
+      "district": "Mainpuri"
+    },
+    {
+      "ac_no": 109,
+      "ac_en": "Kishni",
+      "ac_hi": "किशनी",
+      "district": "Mainpuri"
+    },
+    {
+      "ac_no": 110,
+      "ac_en": "Karhal",
+      "ac_hi": "करहल",
+      "district": "Mainpuri"
+    },
+    {
+      "ac_no": 111,
+      "ac_en": "Gunnaur",
+      "ac_hi": "गुन्नौर",
+      "district": "Sambhal"
+    },
+    {
+      "ac_no": 112,
+      "ac_en": "Bisauli",
+      "ac_hi": "बिसौली",
+      "district": "Budaun"
+    },
+    {
+      "ac_no": 113,
+      "ac_en": "Sahaswan",
+      "ac_hi": "सहसवान",
+      "district": "Budaun"
+    },
+    {
+      "ac_no": 114,
+      "ac_en": "Bilsi",
+      "ac_hi": "बिल्सी",
+      "district": "Budaun"
+    },
+    {
+      "ac_no": 115,
+      "ac_en": "Badaun",
+      "ac_hi": "बदायूं",
+      "district": "Budaun"
+    },
+    {
+      "ac_no": 116,
+      "ac_en": "Shekhupur",
+      "ac_hi": "शेखुपुर",
+      "district": "Budaun"
+    },
+    {
+      "ac_no": 117,
+      "ac_en": "Dataganj",
+      "ac_hi": "दातागंज",
+      "district": "Budaun"
+    },
+    {
+      "ac_no": 118,
+      "ac_en": "Baheri",
+      "ac_hi": "बहेड़ी",
+      "district": "Bareilly Zila"
+    },
+    {
+      "ac_no": 119,
+      "ac_en": "Meerganj",
+      "ac_hi": "मीरगंज",
+      "district": "Bareilly Zila"
+    },
+    {
+      "ac_no": 120,
+      "ac_en": "Bhojipura",
+      "ac_hi": "भोजीपुरा",
+      "district": "Bareilly Zila"
+    },
+    {
+      "ac_no": 121,
+      "ac_en": "Nawabganj",
+      "ac_hi": "नवाबगंज",
+      "district": "Bareilly Zila"
+    },
+    {
+      "ac_no": 122,
+      "ac_en": "Faridpur",
+      "ac_hi": "फरीदपुर",
+      "district": "Aonla"
+    },
+    {
+      "ac_no": 123,
+      "ac_en": "Bithari Chainpur",
+      "ac_hi": "बिथरी चैनपुर",
+      "district": "Aonla"
+    },
+    {
+      "ac_no": 124,
+      "ac_en": "Bareilly City",
+      "ac_hi": "बरेली शहर",
+      "district": "Bareilly Mahanagar"
+    },
+    {
+      "ac_no": 125,
+      "ac_en": "Bareilly Cantt",
+      "ac_hi": "बरेली कैन्ट",
+      "district": "Bareilly Mahanagar"
+    },
+    {
+      "ac_no": 126,
+      "ac_en": "Aonla",
+      "ac_hi": "आंवला",
+      "district": "Aonla"
+    },
+    {
+      "ac_no": 127,
+      "ac_en": "Pilibhit",
+      "ac_hi": "पीलीभीत",
+      "district": "Pilibhit"
+    },
+    {
+      "ac_no": 128,
+      "ac_en": "Barkhera",
+      "ac_hi": "बरखेड़ा",
+      "district": "Pilibhit"
+    },
+    {
+      "ac_no": 129,
+      "ac_en": "Puranpur",
+      "ac_hi": "पूरनपुर",
+      "district": "Pilibhit"
+    },
+    {
+      "ac_no": 130,
+      "ac_en": "Bisalpur",
+      "ac_hi": "बीसलपुर",
+      "district": "Pilibhit"
+    },
+    {
+      "ac_no": 131,
+      "ac_en": "Katra",
+      "ac_hi": "कटरा",
+      "district": "Shahjahanpur Zila"
+    },
+    {
+      "ac_no": 132,
+      "ac_en": "Jalalabad",
+      "ac_hi": "जलालाबाद",
+      "district": "Shahjahanpur Zila"
+    },
+    {
+      "ac_no": 133,
+      "ac_en": "Tilhar",
+      "ac_hi": "तिलहर",
+      "district": "Shahjahanpur Zila"
+    },
+    {
+      "ac_no": 134,
+      "ac_en": "Powayan",
+      "ac_hi": "पुवायां",
+      "district": "Shahjahanpur Zila"
+    },
+    {
+      "ac_no": 135,
+      "ac_en": "Shahjahanpur",
+      "ac_hi": "शाहजहांपुर",
+      "district": "Shahjahanpur Mahanagar"
+    },
+    {
+      "ac_no": 136,
+      "ac_en": "Dadraul",
+      "ac_hi": "ददरौल",
+      "district": "Shahjahanpur Mahanagar"
+    },
+    {
+      "ac_no": 137,
+      "ac_en": "Paliya",
+      "ac_hi": "पलिया",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 138,
+      "ac_en": "Nighasan",
+      "ac_hi": "निघासन",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 139,
+      "ac_en": "Gola Gokrannath",
+      "ac_hi": "गोला गोकर्णनाथ",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 140,
+      "ac_en": "Sri Nagar",
+      "ac_hi": "श्रीनगर",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 141,
+      "ac_en": "Dhaurahra",
+      "ac_hi": "धौरहरा",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 142,
+      "ac_en": "Lakhimpur",
+      "ac_hi": "लखीमपुर",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 143,
+      "ac_en": "Kasta",
+      "ac_hi": "कस्ता",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 144,
+      "ac_en": "Mohammadi",
+      "ac_hi": "मोहम्मदी",
+      "district": "Lakhimpur"
+    },
+    {
+      "ac_no": 145,
+      "ac_en": "Maholi",
+      "ac_hi": "महोली",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 146,
+      "ac_en": "Sitapur",
+      "ac_hi": "सीतापुर",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 147,
+      "ac_en": "Hargaon",
+      "ac_hi": "हरगांव",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 148,
+      "ac_en": "Laharpur",
+      "ac_hi": "लहरपुर",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 149,
+      "ac_en": "Biswan",
+      "ac_hi": "बिसवां",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 150,
+      "ac_en": "Sevata",
+      "ac_hi": "सेवता",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 151,
+      "ac_en": "Mahmoodabad",
+      "ac_hi": "महमूदाबाद",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 152,
+      "ac_en": "Sidhauli",
+      "ac_hi": "सिधौली",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 153,
+      "ac_en": "Mishrikh",
+      "ac_hi": "मिश्रिख",
+      "district": "Sitapur"
+    },
+    {
+      "ac_no": 154,
+      "ac_en": "Sawayazpur",
+      "ac_hi": "सवायजपुर",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 155,
+      "ac_en": "Shahabad",
+      "ac_hi": "शाहाबाद",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 156,
+      "ac_en": "Hardoi",
+      "ac_hi": "हरदोई",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 157,
+      "ac_en": "Gopamau",
+      "ac_hi": "गोपामऊ",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 158,
+      "ac_en": "Sandi",
+      "ac_hi": "सांडी",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 159,
+      "ac_en": "Bilgram Mallanwan",
+      "ac_hi": "बिलग्राम मल्लावां",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 160,
+      "ac_en": "Balamau",
+      "ac_hi": "बालामऊ",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 161,
+      "ac_en": "Sandila",
+      "ac_hi": "सण्डीला",
+      "district": "Hardoi"
+    },
+    {
+      "ac_no": 162,
+      "ac_en": "Bangarmau",
+      "ac_hi": "बांगरमऊ",
+      "district": "Unnao"
+    },
+    {
+      "ac_no": 163,
+      "ac_en": "Safipur",
+      "ac_hi": "सफीपुर",
+      "district": "Unnao"
+    },
+    {
+      "ac_no": 164,
+      "ac_en": "Mohan",
+      "ac_hi": "मोहान",
+      "district": "Unnao"
+    },
+    {
+      "ac_no": 165,
+      "ac_en": "Unnao",
+      "ac_hi": "उन्नाव",
+      "district": "Unnao"
+    },
+    {
+      "ac_no": 166,
+      "ac_en": "Bhagwantnagar",
+      "ac_hi": "भगवन्तनगर",
+      "district": "Unnao"
+    },
+    {
+      "ac_no": 167,
+      "ac_en": "Purwa",
+      "ac_hi": "पुरवा",
+      "district": "Unnao"
+    },
+    {
+      "ac_no": 168,
+      "ac_en": "Malihabad",
+      "ac_hi": "मलिहाबाद",
+      "district": "Lucknow Zila"
+    },
+    {
+      "ac_no": 169,
+      "ac_en": "Bakshi Ka Talab",
+      "ac_hi": "बख्शी का तालाब",
+      "district": "Lucknow Zila"
+    },
+    {
+      "ac_no": 170,
+      "ac_en": "Sarojini Nagar",
+      "ac_hi": "सरोजनी नगर",
+      "district": "Lucknow Zila"
+    },
+    {
+      "ac_no": 171,
+      "ac_en": "Lucknow West",
+      "ac_hi": "लखनऊ पश्चिम",
+      "district": "Lucknow Mahanagar"
+    },
+    {
+      "ac_no": 172,
+      "ac_en": "Lucknow North",
+      "ac_hi": "लखनऊ उत्तर",
+      "district": "Lucknow Mahanagar"
+    },
+    {
+      "ac_no": 173,
+      "ac_en": "Lucknow East",
+      "ac_hi": "लखनऊ पूर्व",
+      "district": "Lucknow Mahanagar"
+    },
+    {
+      "ac_no": 174,
+      "ac_en": "Lucknow Central",
+      "ac_hi": "लखनऊ मध्य",
+      "district": "Lucknow Mahanagar"
+    },
+    {
+      "ac_no": 175,
+      "ac_en": "Lucknow Cantt",
+      "ac_hi": "लखनऊ कैंट",
+      "district": "Lucknow Mahanagar"
+    },
+    {
+      "ac_no": 176,
+      "ac_en": "Mohanlalganj",
+      "ac_hi": "मोहनलालगंज",
+      "district": "Lucknow Zila"
+    },
+    {
+      "ac_no": 177,
+      "ac_en": "Bachrawan",
+      "ac_hi": "बछरावां",
+      "district": "Raebareli"
+    },
+    {
+      "ac_no": 178,
+      "ac_en": "Tiloi",
+      "ac_hi": "तिलोई",
+      "district": "Amethi"
+    },
+    {
+      "ac_no": 179,
+      "ac_en": "Harchandpur",
+      "ac_hi": "हरचंदपुर",
+      "district": "Raebareli"
+    },
+    {
+      "ac_no": 180,
+      "ac_en": "Rae Bareli",
+      "ac_hi": "रायबरेली",
+      "district": "Raebareli"
+    },
+    {
+      "ac_no": 181,
+      "ac_en": "Salon",
+      "ac_hi": "सलोन",
+      "district": "Raebareli"
+    },
+    {
+      "ac_no": 182,
+      "ac_en": "Sareni",
+      "ac_hi": "सरेनी",
+      "district": "Raebareli"
+    },
+    {
+      "ac_no": 183,
+      "ac_en": "Unchahar",
+      "ac_hi": "ऊंचाहार",
+      "district": "Raebareli"
+    },
+    {
+      "ac_no": 184,
+      "ac_en": "Jagdishpur",
+      "ac_hi": "जगदीशपुर",
+      "district": "Amethi"
+    },
+    {
+      "ac_no": 185,
+      "ac_en": "Gauriganj",
+      "ac_hi": "गौरीगंज",
+      "district": "Amethi"
+    },
+    {
+      "ac_no": 186,
+      "ac_en": "Amethi",
+      "ac_hi": "अमेठी",
+      "district": "Amethi"
+    },
+    {
+      "ac_no": 187,
+      "ac_en": "Isauli",
+      "ac_hi": "इसौली",
+      "district": "Sultanpur"
+    },
+    {
+      "ac_no": 188,
+      "ac_en": "Sultanpur",
+      "ac_hi": "सुल्तानपुर",
+      "district": "Sultanpur"
+    },
+    {
+      "ac_no": 189,
+      "ac_en": "Sultanpur Sadar",
+      "ac_hi": "सुल्तानपुर सदर",
+      "district": "Sultanpur"
+    },
+    {
+      "ac_no": 190,
+      "ac_en": "Lambhua",
+      "ac_hi": "लम्भुआ",
+      "district": "Sultanpur"
+    },
+    {
+      "ac_no": 191,
+      "ac_en": "Kadipur",
+      "ac_hi": "कादीपुर",
+      "district": "Sultanpur"
+    },
+    {
+      "ac_no": 192,
+      "ac_en": "Kaimganj",
+      "ac_hi": "कायमगंज",
+      "district": "Farrukhabad"
+    },
+    {
+      "ac_no": 193,
+      "ac_en": "Amritpur",
+      "ac_hi": "अमृतपुर",
+      "district": "Farrukhabad"
+    },
+    {
+      "ac_no": 194,
+      "ac_en": "Farrukhabad",
+      "ac_hi": "फर्रूखाबाद",
+      "district": "Farrukhabad"
+    },
+    {
+      "ac_no": 195,
+      "ac_en": "Bhojpur",
+      "ac_hi": "भोजपुर",
+      "district": "Farrukhabad"
+    },
+    {
+      "ac_no": 196,
+      "ac_en": "Chhibramau",
+      "ac_hi": "छिबरामऊ",
+      "district": "Kannauj"
+    },
+    {
+      "ac_no": 197,
+      "ac_en": "Tirwa",
+      "ac_hi": "तिर्वा",
+      "district": "Kannauj"
+    },
+    {
+      "ac_no": 198,
+      "ac_en": "Kannauj",
+      "ac_hi": "कन्नौज",
+      "district": "Kannauj"
+    },
+    {
+      "ac_no": 199,
+      "ac_en": "Jaswant Nagar",
+      "ac_hi": "जसवन्त नगर",
+      "district": "Etawah"
+    },
+    {
+      "ac_no": 200,
+      "ac_en": "Etawah",
+      "ac_hi": "इटावा",
+      "district": "Etawah"
+    },
+    {
+      "ac_no": 201,
+      "ac_en": "Bharthana",
+      "ac_hi": "भरथना",
+      "district": "Etawah"
+    },
+    {
+      "ac_no": 202,
+      "ac_en": "Bidhuna",
+      "ac_hi": "बिधूना",
+      "district": "Auraiya"
+    },
+    {
+      "ac_no": 203,
+      "ac_en": "Dibiyapur",
+      "ac_hi": "दिबियापुर",
+      "district": "Auraiya"
+    },
+    {
+      "ac_no": 204,
+      "ac_en": "Auraiya",
+      "ac_hi": "औरैया",
+      "district": "Auraiya"
+    },
+    {
+      "ac_no": 205,
+      "ac_en": "Rasulabad",
+      "ac_hi": "रसूलाबाद",
+      "district": "Kanpur Dehat"
+    },
+    {
+      "ac_no": 206,
+      "ac_en": "Akbarpur Rania",
+      "ac_hi": "अकबरपुर रनिया",
+      "district": "Kanpur Dehat"
+    },
+    {
+      "ac_no": 207,
+      "ac_en": "Sikandra",
+      "ac_hi": "सिकन्दरा",
+      "district": "Kanpur Dehat"
+    },
+    {
+      "ac_no": 208,
+      "ac_en": "Bhognipur",
+      "ac_hi": "भोगनीपुर",
+      "district": "Kanpur Dehat"
+    },
+    {
+      "ac_no": 209,
+      "ac_en": "Bilhaur",
+      "ac_hi": "बिल्हौर",
+      "district": "Kanpur Gramin"
+    },
+    {
+      "ac_no": 210,
+      "ac_en": "Bithoor",
+      "ac_hi": "बिठूर",
+      "district": "Kanpur Gramin"
+    },
+    {
+      "ac_no": 211,
+      "ac_en": "Kalyanpur",
+      "ac_hi": "कल्यानपुर",
+      "district": "Kanpur Mahanagar North"
+    },
+    {
+      "ac_no": 212,
+      "ac_en": "Govind Nagar",
+      "ac_hi": "गोविन्द नगर",
+      "district": "Kanpur Mahanagar North"
+    },
+    {
+      "ac_no": 213,
+      "ac_en": "Sishamau",
+      "ac_hi": "सीसामऊ",
+      "district": "Kanpur Mahanagar North"
+    },
+    {
+      "ac_no": 214,
+      "ac_en": "Arya Nagar",
+      "ac_hi": "आर्य नगर",
+      "district": "Kanpur Mahanagar North"
+    },
+    {
+      "ac_no": 215,
+      "ac_en": "Kidwai Nagar",
+      "ac_hi": "किदवई नगर",
+      "district": "Kanpur Mahanagar South"
+    },
+    {
+      "ac_no": 216,
+      "ac_en": "Kanpur Cantt",
+      "ac_hi": "कानपुर कैंट",
+      "district": "Kanpur Mahanagar South"
+    },
+    {
+      "ac_no": 217,
+      "ac_en": "Maharajpur",
+      "ac_hi": "महाराजपुर",
+      "district": "Kanpur Mahanagar South"
+    },
+    {
+      "ac_no": 218,
+      "ac_en": "Ghatampur",
+      "ac_hi": "घाटमपुर",
+      "district": "Kanpur Gramin"
+    },
+    {
+      "ac_no": 219,
+      "ac_en": "Madhogarh",
+      "ac_hi": "माधोगढ़",
+      "district": "Jalaun"
+    },
+    {
+      "ac_no": 220,
+      "ac_en": "Kalpi",
+      "ac_hi": "कालपी",
+      "district": "Jalaun"
+    },
+    {
+      "ac_no": 221,
+      "ac_en": "Orai",
+      "ac_hi": "उरई",
+      "district": "Jalaun"
+    },
+    {
+      "ac_no": 222,
+      "ac_en": "Babina",
+      "ac_hi": "बबीना",
+      "district": "Jhansi Mahanagar"
+    },
+    {
+      "ac_no": 223,
+      "ac_en": "Jhansi Nagar",
+      "ac_hi": "झांसी नगर",
+      "district": "Jhansi Mahanagar"
+    },
+    {
+      "ac_no": 224,
+      "ac_en": "Mauranipur",
+      "ac_hi": "मऊरानीपुर",
+      "district": "Jhansi Zila"
+    },
+    {
+      "ac_no": 225,
+      "ac_en": "Garautha",
+      "ac_hi": "गरौठा",
+      "district": "Jhansi Zila"
+    },
+    {
+      "ac_no": 226,
+      "ac_en": "Lalitpur",
+      "ac_hi": "ललितपुर",
+      "district": "Lalitpur"
+    },
+    {
+      "ac_no": 227,
+      "ac_en": "Mehroni",
+      "ac_hi": "महरौनी",
+      "district": "Lalitpur"
+    },
+    {
+      "ac_no": 228,
+      "ac_en": "Hamirpur",
+      "ac_hi": "हमीरपुर",
+      "district": "Hamirpur"
+    },
+    {
+      "ac_no": 229,
+      "ac_en": "Rath",
+      "ac_hi": "राठ",
+      "district": "Hamirpur"
+    },
+    {
+      "ac_no": 230,
+      "ac_en": "Mahoba",
+      "ac_hi": "महोबा",
+      "district": "Mahoba"
+    },
+    {
+      "ac_no": 231,
+      "ac_en": "Charkhari",
+      "ac_hi": "चरखारी",
+      "district": "Mahoba"
+    },
+    {
+      "ac_no": 232,
+      "ac_en": "Tindwari",
+      "ac_hi": "तिन्दवारी",
+      "district": "Banda"
+    },
+    {
+      "ac_no": 233,
+      "ac_en": "Baberu",
+      "ac_hi": "बबेरू",
+      "district": "Banda"
+    },
+    {
+      "ac_no": 234,
+      "ac_en": "Naraini",
+      "ac_hi": "नरैनी",
+      "district": "Banda"
+    },
+    {
+      "ac_no": 235,
+      "ac_en": "Banda",
+      "ac_hi": "बांदा",
+      "district": "Banda"
+    },
+    {
+      "ac_no": 236,
+      "ac_en": "Chitrakoot",
+      "ac_hi": "चित्रकूट",
+      "district": "Chitrakoot"
+    },
+    {
+      "ac_no": 237,
+      "ac_en": "Manikpur",
+      "ac_hi": "मानिकपुर",
+      "district": "Chitrakoot"
+    },
+    {
+      "ac_no": 238,
+      "ac_en": "Jahanabad",
+      "ac_hi": "जहानाबाद",
+      "district": "Fatehpur"
+    },
+    {
+      "ac_no": 239,
+      "ac_en": "Bindki",
+      "ac_hi": "बिन्दकी",
+      "district": "Fatehpur"
+    },
+    {
+      "ac_no": 240,
+      "ac_en": "Fatehpur",
+      "ac_hi": "फतेहपुर",
+      "district": "Fatehpur"
+    },
+    {
+      "ac_no": 241,
+      "ac_en": "Ayah Shah",
+      "ac_hi": "अयाह शाह",
+      "district": "Fatehpur"
+    },
+    {
+      "ac_no": 242,
+      "ac_en": "Husainganj",
+      "ac_hi": "हुसैनगंज",
+      "district": "Fatehpur"
+    },
+    {
+      "ac_no": 243,
+      "ac_en": "Khaga",
+      "ac_hi": "खागा",
+      "district": "Fatehpur"
+    },
+    {
+      "ac_no": 244,
+      "ac_en": "Rampur Khas",
+      "ac_hi": "रामपुर खास",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 245,
+      "ac_en": "Babaganj",
+      "ac_hi": "बाबागंज",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 246,
+      "ac_en": "Kunda",
+      "ac_hi": "कुंडा",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 247,
+      "ac_en": "Vishwanathganj",
+      "ac_hi": "विश्वनाथगंज",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 248,
+      "ac_en": "Pratapgarh",
+      "ac_hi": "प्रतापगढ़",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 249,
+      "ac_en": "Patti",
+      "ac_hi": "पट्टी",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 250,
+      "ac_en": "Raniganj",
+      "ac_hi": "रानीगंज",
+      "district": "Pratapgarh"
+    },
+    {
+      "ac_no": 251,
+      "ac_en": "Sirathu",
+      "ac_hi": "सिराथू",
+      "district": "Kaushambi"
+    },
+    {
+      "ac_no": 252,
+      "ac_en": "Manjhanpur",
+      "ac_hi": "मंझनपुर",
+      "district": "Kaushambi"
+    },
+    {
+      "ac_no": 253,
+      "ac_en": "Chayal",
+      "ac_hi": "चायल",
+      "district": "Kaushambi"
+    },
+    {
+      "ac_no": 254,
+      "ac_en": "Phaphamau",
+      "ac_hi": "फाफामऊ",
+      "district": "Prayagraj Zila Gangapar"
+    },
+    {
+      "ac_no": 255,
+      "ac_en": "Soraon",
+      "ac_hi": "सोरांव",
+      "district": "Prayagraj Zila Gangapar"
+    },
+    {
+      "ac_no": 256,
+      "ac_en": "Phulpur",
+      "ac_hi": "फूलपुर",
+      "district": "Prayagraj Zila Gangapar"
+    },
+    {
+      "ac_no": 257,
+      "ac_en": "Pratappur",
+      "ac_hi": "प्रतापपुर",
+      "district": "Prayagraj Zila Gangapar"
+    },
+    {
+      "ac_no": 258,
+      "ac_en": "Handia",
+      "ac_hi": "हण्डिया",
+      "district": "Prayagraj Zila Gangapar"
+    },
+    {
+      "ac_no": 259,
+      "ac_en": "Meja",
+      "ac_hi": "मेजा",
+      "district": "Prayagraj Zila Yamunapar"
+    },
+    {
+      "ac_no": 260,
+      "ac_en": "Karachhana",
+      "ac_hi": "करछना",
+      "district": "Prayagraj Zila Yamunapar"
+    },
+    {
+      "ac_no": 261,
+      "ac_en": "Allahabad West",
+      "ac_hi": "इलाहाबाद पश्चिमी",
+      "district": "Prayagraj Mahanagar"
+    },
+    {
+      "ac_no": 262,
+      "ac_en": "Allahabad North",
+      "ac_hi": "इलाहाबाद उत्तरी",
+      "district": "Prayagraj Mahanagar"
+    },
+    {
+      "ac_no": 263,
+      "ac_en": "Allahabad South",
+      "ac_hi": "इलाहाबाद दक्षिणी",
+      "district": "Prayagraj Mahanagar"
+    },
+    {
+      "ac_no": 264,
+      "ac_en": "Bara",
+      "ac_hi": "बारा",
+      "district": "Prayagraj Zila Yamunapar"
+    },
+    {
+      "ac_no": 265,
+      "ac_en": "Koraon",
+      "ac_hi": "कोरांव",
+      "district": "Prayagraj Zila Yamunapar"
+    },
+    {
+      "ac_no": 266,
+      "ac_en": "Kursi",
+      "ac_hi": "कुर्सी",
+      "district": "Barabanki"
+    },
+    {
+      "ac_no": 267,
+      "ac_en": "Ramnagar",
+      "ac_hi": "रामनगर",
+      "district": "Barabanki"
+    },
+    {
+      "ac_no": 268,
+      "ac_en": "Barabanki",
+      "ac_hi": "बाराबंकी",
+      "district": "Barabanki"
+    },
+    {
+      "ac_no": 269,
+      "ac_en": "Zaidpur",
+      "ac_hi": "जैदपुर",
+      "district": "Barabanki"
+    },
+    {
+      "ac_no": 270,
+      "ac_en": "Dariyabad",
+      "ac_hi": "दरियाबाद",
+      "district": "Barabanki"
+    },
+    {
+      "ac_no": 271,
+      "ac_en": "Rudauli",
+      "ac_hi": "रूदौली",
+      "district": "Ayodhya Zila"
+    },
+    {
+      "ac_no": 272,
+      "ac_en": "Haidergarh",
+      "ac_hi": "हैदरगढ़",
+      "district": "Barabanki"
+    },
+    {
+      "ac_no": 273,
+      "ac_en": "Milkipur",
+      "ac_hi": "मिल्कीपुर",
+      "district": "Ayodhya Zila"
+    },
+    {
+      "ac_no": 274,
+      "ac_en": "Bikapur",
+      "ac_hi": "बीकापुर",
+      "district": "Ayodhya Zila"
+    },
+    {
+      "ac_no": 275,
+      "ac_en": "Ayodhya",
+      "ac_hi": "अयोध्या",
+      "district": "Ayodhya Mahanagar"
+    },
+    {
+      "ac_no": 276,
+      "ac_en": "Gosainganj",
+      "ac_hi": "गोशाईगंज",
+      "district": "Ayodhya Zila"
+    },
+    {
+      "ac_no": 277,
+      "ac_en": "Katehari",
+      "ac_hi": "कटेहरी",
+      "district": "Ambedkar Nagar"
+    },
+    {
+      "ac_no": 278,
+      "ac_en": "Tanda",
+      "ac_hi": "टाण्डा",
+      "district": "Ambedkar Nagar"
+    },
+    {
+      "ac_no": 279,
+      "ac_en": "Alapur",
+      "ac_hi": "आलापुर",
+      "district": "Ambedkar Nagar"
+    },
+    {
+      "ac_no": 280,
+      "ac_en": "Jalalpur",
+      "ac_hi": "जलालपुर",
+      "district": "Ambedkar Nagar"
+    },
+    {
+      "ac_no": 281,
+      "ac_en": "Akbarpur",
+      "ac_hi": "अकबरपुर",
+      "district": "Ambedkar Nagar"
+    },
+    {
+      "ac_no": 282,
+      "ac_en": "Balha",
+      "ac_hi": "बलहा",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 283,
+      "ac_en": "Nanpara",
+      "ac_hi": "नानपारा",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 284,
+      "ac_en": "Matera",
+      "ac_hi": "मटेरा",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 285,
+      "ac_en": "Mahasi",
+      "ac_hi": "महसी",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 286,
+      "ac_en": "Bahraich",
+      "ac_hi": "बहराइच",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 287,
+      "ac_en": "Payagpur",
+      "ac_hi": "पयागपुर",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 288,
+      "ac_en": "Kaiserganj",
+      "ac_hi": "कैसरगंज",
+      "district": "Bahraich"
+    },
+    {
+      "ac_no": 289,
+      "ac_en": "Bhinga",
+      "ac_hi": "भिनगा",
+      "district": "Shravasti"
+    },
+    {
+      "ac_no": 290,
+      "ac_en": "Shrawasti",
+      "ac_hi": "श्रावस्ती",
+      "district": "Shravasti"
+    },
+    {
+      "ac_no": 291,
+      "ac_en": "Tulsipur",
+      "ac_hi": "तुलसीपुर",
+      "district": "Balrampur"
+    },
+    {
+      "ac_no": 292,
+      "ac_en": "Gainsari",
+      "ac_hi": "गैंसड़ी",
+      "district": "Balrampur"
+    },
+    {
+      "ac_no": 293,
+      "ac_en": "Utraula",
+      "ac_hi": "उतरौला",
+      "district": "Balrampur"
+    },
+    {
+      "ac_no": 294,
+      "ac_en": "Balrampur",
+      "ac_hi": "बलरामपुर",
+      "district": "Balrampur"
+    },
+    {
+      "ac_no": 295,
+      "ac_en": "Mehnaun",
+      "ac_hi": "मेहनौन",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 296,
+      "ac_en": "Gonda",
+      "ac_hi": "गोंडा",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 297,
+      "ac_en": "Katra Bazar",
+      "ac_hi": "कटरा बाजार",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 298,
+      "ac_en": "Colonelganj",
+      "ac_hi": "करनैलगंज",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 299,
+      "ac_en": "Tarabganj",
+      "ac_hi": "तरबगंज",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 300,
+      "ac_en": "Mankapur",
+      "ac_hi": "मनकापुर",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 301,
+      "ac_en": "Gaura",
+      "ac_hi": "गौरा",
+      "district": "Gonda"
+    },
+    {
+      "ac_no": 302,
+      "ac_en": "Shohratgarh",
+      "ac_hi": "शोहरतगढ़",
+      "district": "Siddharthnagar"
+    },
+    {
+      "ac_no": 303,
+      "ac_en": "Kapilvastu",
+      "ac_hi": "कपिलवस्तु",
+      "district": "Siddharthnagar"
+    },
+    {
+      "ac_no": 304,
+      "ac_en": "Bansi",
+      "ac_hi": "बांसी",
+      "district": "Siddharthnagar"
+    },
+    {
+      "ac_no": 305,
+      "ac_en": "Itwa",
+      "ac_hi": "इटवा",
+      "district": "Siddharthnagar"
+    },
+    {
+      "ac_no": 306,
+      "ac_en": "Domariyaganj",
+      "ac_hi": "डुमरियागंज",
+      "district": "Siddharthnagar"
+    },
+    {
+      "ac_no": 307,
+      "ac_en": "Harraiya",
+      "ac_hi": "हरैया",
+      "district": "Basti"
+    },
+    {
+      "ac_no": 308,
+      "ac_en": "Kaptanganj",
+      "ac_hi": "कप्तानगंज",
+      "district": "Basti"
+    },
+    {
+      "ac_no": 309,
+      "ac_en": "Rudhauli",
+      "ac_hi": "रुधौली",
+      "district": "Basti"
+    },
+    {
+      "ac_no": 310,
+      "ac_en": "Basti Sadar",
+      "ac_hi": "बस्ती सदर",
+      "district": "Basti"
+    },
+    {
+      "ac_no": 311,
+      "ac_en": "Mahadewa",
+      "ac_hi": "महादेवा",
+      "district": "Basti"
+    },
+    {
+      "ac_no": 312,
+      "ac_en": "Menhdawal",
+      "ac_hi": "मेंहदावल",
+      "district": "Sant Kabir Nagar"
+    },
+    {
+      "ac_no": 313,
+      "ac_en": "Khalilabad",
+      "ac_hi": "खलीलाबाद",
+      "district": "Sant Kabir Nagar"
+    },
+    {
+      "ac_no": 314,
+      "ac_en": "Dhanghata",
+      "ac_hi": "धनघटा",
+      "district": "Sant Kabir Nagar"
+    },
+    {
+      "ac_no": 315,
+      "ac_en": "Pharenda",
+      "ac_hi": "फरेन्दा",
+      "district": "Maharajganj"
+    },
+    {
+      "ac_no": 316,
+      "ac_en": "Nautanwa",
+      "ac_hi": "नौतनवा",
+      "district": "Maharajganj"
+    },
+    {
+      "ac_no": 317,
+      "ac_en": "Siswa",
+      "ac_hi": "सिसवा",
+      "district": "Maharajganj"
+    },
+    {
+      "ac_no": 318,
+      "ac_en": "Maharajganj",
+      "ac_hi": "महराजगंज",
+      "district": "Maharajganj"
+    },
+    {
+      "ac_no": 319,
+      "ac_en": "Paniyara",
+      "ac_hi": "पनियरा",
+      "district": "Maharajganj"
+    },
+    {
+      "ac_no": 320,
+      "ac_en": "Campiyarganj",
+      "ac_hi": "कैम्पियरगंज",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 321,
+      "ac_en": "Pipraich",
+      "ac_hi": "पिपराईच",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 322,
+      "ac_en": "Gorakhpur Urban",
+      "ac_hi": "गोरखपुर शहर",
+      "district": "Gorakhpur Mahanagar"
+    },
+    {
+      "ac_no": 323,
+      "ac_en": "Gorakhpur Rural",
+      "ac_hi": "गोरखपुर ग्रामीण",
+      "district": "Gorakhpur Mahanagar"
+    },
+    {
+      "ac_no": 324,
+      "ac_en": "Sahajanwa",
+      "ac_hi": "सहजनवा",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 325,
+      "ac_en": "Khajani",
+      "ac_hi": "खजनी",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 326,
+      "ac_en": "Chauri Chaura",
+      "ac_hi": "चौरी चौरा",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 327,
+      "ac_en": "Bansgaon",
+      "ac_hi": "बांसगांव",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 328,
+      "ac_en": "Chillupar",
+      "ac_hi": "चिल्लूपार",
+      "district": "Gorakhpur Zila"
+    },
+    {
+      "ac_no": 329,
+      "ac_en": "Khadda",
+      "ac_hi": "खड्डा",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 330,
+      "ac_en": "Padrauna",
+      "ac_hi": "पडरौना",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 331,
+      "ac_en": "Tamkuhi Raj",
+      "ac_hi": "तमकुही राज",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 332,
+      "ac_en": "Fazilnagar",
+      "ac_hi": "फाजिलनगर",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 333,
+      "ac_en": "Kushinagar",
+      "ac_hi": "कुशीनगर",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 334,
+      "ac_en": "Hata",
+      "ac_hi": "हाटा",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 335,
+      "ac_en": "Ramkola",
+      "ac_hi": "रामकोला",
+      "district": "Kushinagar"
+    },
+    {
+      "ac_no": 336,
+      "ac_en": "Rudrapur",
+      "ac_hi": "रुद्रपुर",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 337,
+      "ac_en": "Deoria",
+      "ac_hi": "देवरिया",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 338,
+      "ac_en": "Pathardeva",
+      "ac_hi": "पथरदेवा",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 339,
+      "ac_en": "Rampur Karkhana",
+      "ac_hi": "रामपुर कारखाना",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 340,
+      "ac_en": "Bhatpar Rani",
+      "ac_hi": "भाटपार रानी",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 341,
+      "ac_en": "Salempur",
+      "ac_hi": "सलेमपुर",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 342,
+      "ac_en": "Barhaj",
+      "ac_hi": "बरहज",
+      "district": "Deoria"
+    },
+    {
+      "ac_no": 343,
+      "ac_en": "Atrauliya",
+      "ac_hi": "अतरौलिया",
+      "district": "Lalganj"
+    },
+    {
+      "ac_no": 344,
+      "ac_en": "Gopalpur",
+      "ac_hi": "गोपालपुर",
+      "district": "Azamgarh"
+    },
+    {
+      "ac_no": 345,
+      "ac_en": "Sagri",
+      "ac_hi": "सगड़ी",
+      "district": "Azamgarh"
+    },
+    {
+      "ac_no": 346,
+      "ac_en": "Mubarakpur",
+      "ac_hi": "मुबारकपुर",
+      "district": "Azamgarh"
+    },
+    {
+      "ac_no": 347,
+      "ac_en": "Azamgarh",
+      "ac_hi": "आजमगढ़",
+      "district": "Azamgarh"
+    },
+    {
+      "ac_no": 348,
+      "ac_en": "Nizamabad",
+      "ac_hi": "निजामाबाद",
+      "district": "Lalganj"
+    },
+    {
+      "ac_no": 349,
+      "ac_en": "Phoolpur Pawai",
+      "ac_hi": "फूलपुर पवई",
+      "district": "Lalganj"
+    },
+    {
+      "ac_no": 350,
+      "ac_en": "Didarganj",
+      "ac_hi": "दीदारगंज",
+      "district": "Lalganj"
+    },
+    {
+      "ac_no": 351,
+      "ac_en": "Lalganj",
+      "ac_hi": "लालगंज",
+      "district": "Lalganj"
+    },
+    {
+      "ac_no": 352,
+      "ac_en": "Mehnagar",
+      "ac_hi": "मेहनगर",
+      "district": "Azamgarh"
+    },
+    {
+      "ac_no": 353,
+      "ac_en": "Madhuban",
+      "ac_hi": "मधुबन",
+      "district": "Mau"
+    },
+    {
+      "ac_no": 354,
+      "ac_en": "Ghosi",
+      "ac_hi": "घोसी",
+      "district": "Mau"
+    },
+    {
+      "ac_no": 355,
+      "ac_en": "Muhammadabad Gohna",
+      "ac_hi": "मुहम्मदाबाद गोहना",
+      "district": "Mau"
+    },
+    {
+      "ac_no": 356,
+      "ac_en": "Mau",
+      "ac_hi": "मऊ",
+      "district": "Mau"
+    },
+    {
+      "ac_no": 357,
+      "ac_en": "Belthara Road",
+      "ac_hi": "बेल्थरा रोड",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 358,
+      "ac_en": "Rasara",
+      "ac_hi": "रसड़ा",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 359,
+      "ac_en": "Sikandarpur",
+      "ac_hi": "सिकन्दरपुर",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 360,
+      "ac_en": "Phephana",
+      "ac_hi": "फेफना",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 361,
+      "ac_en": "Ballia Nagar",
+      "ac_hi": "बलिया नगर",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 362,
+      "ac_en": "Bansdih",
+      "ac_hi": "बांसडीह",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 363,
+      "ac_en": "Bairia",
+      "ac_hi": "बैरिया",
+      "district": "Ballia"
+    },
+    {
+      "ac_no": 364,
+      "ac_en": "Badlapur",
+      "ac_hi": "बदलापुर",
+      "district": "Jaunpur"
+    },
+    {
+      "ac_no": 365,
+      "ac_en": "Shahganj",
+      "ac_hi": "शाहगंज",
+      "district": "Jaunpur"
+    },
+    {
+      "ac_no": 366,
+      "ac_en": "Jaunpur",
+      "ac_hi": "जौनपुर",
+      "district": "Jaunpur"
+    },
+    {
+      "ac_no": 367,
+      "ac_en": "Malhani",
+      "ac_hi": "मल्हनी",
+      "district": "Jaunpur"
+    },
+    {
+      "ac_no": 368,
+      "ac_en": "Mungra Badshahpur",
+      "ac_hi": "मुंगरा बादशाहपुर",
+      "district": "Jaunpur"
+    },
+    {
+      "ac_no": 369,
+      "ac_en": "Machhlishahar",
+      "ac_hi": "मछलीशहर",
+      "district": "Machhlishahar"
+    },
+    {
+      "ac_no": 370,
+      "ac_en": "Mariyahu",
+      "ac_hi": "मड़ियाहू",
+      "district": "Machhlishahar"
+    },
+    {
+      "ac_no": 371,
+      "ac_en": "Jafrabad",
+      "ac_hi": "जफराबाद",
+      "district": "Machhlishahar"
+    },
+    {
+      "ac_no": 372,
+      "ac_en": "Kerakat",
+      "ac_hi": "केराकत",
+      "district": "Machhlishahar"
+    },
+    {
+      "ac_no": 373,
+      "ac_en": "Jakhanian",
+      "ac_hi": "जखनियां",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 374,
+      "ac_en": "Saidpur",
+      "ac_hi": "सैदपुर",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 375,
+      "ac_en": "Ghazipur Sadar",
+      "ac_hi": "गाजीपुर",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 376,
+      "ac_en": "Jangipur",
+      "ac_hi": "जंगीपुर",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 377,
+      "ac_en": "Zahoorabad",
+      "ac_hi": "जहूराबाद",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 378,
+      "ac_en": "Mohammadabad",
+      "ac_hi": "मोहम्मदाबाद",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 379,
+      "ac_en": "Zamaniya",
+      "ac_hi": "जमानियां",
+      "district": "Ghazipur"
+    },
+    {
+      "ac_no": 380,
+      "ac_en": "Mughalsarai",
+      "ac_hi": "मुगलसराय",
+      "district": "Chandauli"
+    },
+    {
+      "ac_no": 381,
+      "ac_en": "Sakaldiha",
+      "ac_hi": "सकलडीहा",
+      "district": "Chandauli"
+    },
+    {
+      "ac_no": 382,
+      "ac_en": "Saiyadraja",
+      "ac_hi": "सैयदराजा",
+      "district": "Chandauli"
+    },
+    {
+      "ac_no": 383,
+      "ac_en": "Chakia",
+      "ac_hi": "चकिया",
+      "district": "Chandauli"
+    },
+    {
+      "ac_no": 384,
+      "ac_en": "Pindra",
+      "ac_hi": "पिण्ड्रा",
+      "district": "Varanasi Zila"
+    },
+    {
+      "ac_no": 385,
+      "ac_en": "Ajgara",
+      "ac_hi": "अजगरा",
+      "district": "Varanasi Zila"
+    },
+    {
+      "ac_no": 386,
+      "ac_en": "Shivpur",
+      "ac_hi": "शिवपुर",
+      "district": "Varanasi Zila"
+    },
+    {
+      "ac_no": 387,
+      "ac_en": "Rohaniya",
+      "ac_hi": "रोहनियां",
+      "district": "Varanasi Zila"
+    },
+    {
+      "ac_no": 388,
+      "ac_en": "Varanasi North",
+      "ac_hi": "वाराणसी उत्तरी",
+      "district": "Varanasi Mahanagar"
+    },
+    {
+      "ac_no": 389,
+      "ac_en": "Varanasi South",
+      "ac_hi": "वाराणसी दक्षिणी",
+      "district": "Varanasi Mahanagar"
+    },
+    {
+      "ac_no": 390,
+      "ac_en": "Varanasi Cantt",
+      "ac_hi": "वाराणसी कैण्ट",
+      "district": "Varanasi Mahanagar"
+    },
+    {
+      "ac_no": 391,
+      "ac_en": "Sevapuri",
+      "ac_hi": "सेवापुरी",
+      "district": "Varanasi Zila"
+    },
+    {
+      "ac_no": 392,
+      "ac_en": "Bhadohi",
+      "ac_hi": "भदोही",
+      "district": "Bhadohi"
+    },
+    {
+      "ac_no": 393,
+      "ac_en": "Gyanpur",
+      "ac_hi": "ज्ञानपुर",
+      "district": "Bhadohi"
+    },
+    {
+      "ac_no": 394,
+      "ac_en": "Aurai",
+      "ac_hi": "औराई",
+      "district": "Bhadohi"
+    },
+    {
+      "ac_no": 395,
+      "ac_en": "Chhanbey",
+      "ac_hi": "छानबे",
+      "district": "Mirzapur"
+    },
+    {
+      "ac_no": 396,
+      "ac_en": "Mirzapur",
+      "ac_hi": "मिर्जापुर",
+      "district": "Mirzapur"
+    },
+    {
+      "ac_no": 397,
+      "ac_en": "Majhawan",
+      "ac_hi": "मझवां",
+      "district": "Mirzapur"
+    },
+    {
+      "ac_no": 398,
+      "ac_en": "Chunar",
+      "ac_hi": "चुनार",
+      "district": "Mirzapur"
+    },
+    {
+      "ac_no": 399,
+      "ac_en": "Marihan",
+      "ac_hi": "मड़िहान",
+      "district": "Mirzapur"
+    },
+    {
+      "ac_no": 400,
+      "ac_en": "Ghorawal",
+      "ac_hi": "घोरावल",
+      "district": "Sonbhadra"
+    },
+    {
+      "ac_no": 401,
+      "ac_en": "Robertsganj",
+      "ac_hi": "राबर्ट्सगंज",
+      "district": "Sonbhadra"
+    },
+    {
+      "ac_no": 402,
+      "ac_en": "Obra",
+      "ac_hi": "ओबरा",
+      "district": "Sonbhadra"
+    },
+    {
+      "ac_no": 403,
+      "ac_en": "Duddhi",
+      "ac_hi": "दुद्धी",
+      "district": "Sonbhadra"
+    }
+  ]
+}

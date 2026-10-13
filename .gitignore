@@ -1,0 +1,25 @@
+# Environment variables
+.env
+.env.*
+
+# Flutter & Dart build artifacts
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android build artifacts
+android/**/gradle-wrapper.jar
+android/.gradle
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+
+# macOS / IDE
+.DS_Store
+.idea/
+*.iml
+.vscode/

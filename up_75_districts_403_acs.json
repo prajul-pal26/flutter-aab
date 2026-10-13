@@ -1,0 +1,3708 @@
+{
+  "districts": [
+    "अमरोहा",
+    "अमेठी",
+    "अम्बेडकर नगर",
+    "अयोध्या",
+    "अलीगढ़",
+    "आगरा",
+    "आजमगढ़",
+    "इटावा",
+    "उन्नाव",
+    "एटा",
+    "औरैया",
+    "कन्नौज",
+    "कानपुर देहात",
+    "कानपुर नगर",
+    "कासगंज",
+    "कुशीनगर",
+    "कौशाम्बी",
+    "गाजियाबाद",
+    "गाजीपुर",
+    "गोंडा",
+    "गोरखपुर",
+    "गौतम बुद्ध नगर",
+    "चंदौली",
+    "चित्रकूट",
+    "जालौन",
+    "जौनपुर",
+    "झांसी",
+    "देवरिया",
+    "पीलीभीत",
+    "प्रतापगढ़",
+    "प्रयागराज",
+    "फतेहपुर",
+    "फर्रुखाबाद",
+    "फिरोजाबाद",
+    "बदायूं",
+    "बरेली",
+    "बलरामपुर",
+    "बलिया",
+    "बस्ती",
+    "बहराइच",
+    "बांदा",
+    "बागपत",
+    "बाराबंकी",
+    "बिजनौर",
+    "बुलंदशहर",
+    "भदोही",
+    "मऊ",
+    "मथुरा",
+    "महराजगंज",
+    "महोबा",
+    "मिर्जापुर",
+    "मुजफ्फरनगर",
+    "मुरादाबाद",
+    "मेरठ",
+    "मैनपुरी",
+    "रामपुर",
+    "रायबरेली",
+    "लखनऊ",
+    "लखीमपुर खीरी",
+    "ललितपुर",
+    "वाराणसी",
+    "शामली",
+    "शाहजहांपुर",
+    "श्रावस्ती",
+    "संत कबीर नगर",
+    "संभल",
+    "सहारनपुर",
+    "सिद्धार्थनगर",
+    "सीतापुर",
+    "सुल्तानपुर",
+    "सोनभद्र",
+    "हमीरपुर",
+    "हरदोई",
+    "हाथरस",
+    "हापुड़"
+  ],
+  "constituencies": [
+    {
+      "ac_no": 1,
+      "ac_name_en": "Behat",
+      "ac_name_hi": "बेहट",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सहारनपुर"
+    },
+    {
+      "ac_no": 2,
+      "ac_name_en": "Nakur",
+      "ac_name_hi": "नकुड़",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैराना"
+    },
+    {
+      "ac_no": 3,
+      "ac_name_en": "Saharanpur Nagar",
+      "ac_name_hi": "सहारनपुर नगर",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सहारनपुर"
+    },
+    {
+      "ac_no": 4,
+      "ac_name_en": "Saharanpur Dehat",
+      "ac_name_hi": "सहारनपुर देहात",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सहारनपुर"
+    },
+    {
+      "ac_no": 5,
+      "ac_name_en": "Deoband",
+      "ac_name_hi": "देवबंद",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सहारनपुर"
+    },
+    {
+      "ac_no": 6,
+      "ac_name_en": "Rampur Maniharan",
+      "ac_name_hi": "रामपुर मनिहारन",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "सहारनपुर"
+    },
+    {
+      "ac_no": 7,
+      "ac_name_en": "Gangoh",
+      "ac_name_hi": "गंगोह",
+      "district": "सहारनपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैराना"
+    },
+    {
+      "ac_no": 8,
+      "ac_name_en": "Kairana",
+      "ac_name_hi": "कैराना",
+      "district": "शामली",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैराना"
+    },
+    {
+      "ac_no": 9,
+      "ac_name_en": "Thana Bhawan",
+      "ac_name_hi": "थानाभवन",
+      "district": "शामली",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैराना"
+    },
+    {
+      "ac_no": 10,
+      "ac_name_en": "Shamli",
+      "ac_name_hi": "शामली",
+      "district": "शामली",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैराना"
+    },
+    {
+      "ac_no": 11,
+      "ac_name_en": "Budhana",
+      "ac_name_hi": "बुढ़ाना",
+      "district": "मुजफ्फरनगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुजफ्फरनगर"
+    },
+    {
+      "ac_no": 12,
+      "ac_name_en": "Charthawal",
+      "ac_name_hi": "चरथावल",
+      "district": "मुजफ्फरनगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुजफ्फरनगर"
+    },
+    {
+      "ac_no": 13,
+      "ac_name_en": "Purqazi",
+      "ac_name_hi": "पुरकाजी",
+      "district": "मुजफ्फरनगर",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बिजनौर"
+    },
+    {
+      "ac_no": 14,
+      "ac_name_en": "Muzaffarnagar Sadar",
+      "ac_name_hi": "मुजफ्फरनगर",
+      "district": "मुजफ्फरनगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुजफ्फरनगर"
+    },
+    {
+      "ac_no": 15,
+      "ac_name_en": "Khatauli",
+      "ac_name_hi": "खतौली",
+      "district": "मुजफ्फरनगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुजफ्फरनगर"
+    },
+    {
+      "ac_no": 16,
+      "ac_name_en": "Meerapur",
+      "ac_name_hi": "मीरापुर",
+      "district": "मुजफ्फरनगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बिजनौर"
+    },
+    {
+      "ac_no": 17,
+      "ac_name_en": "Najibabad",
+      "ac_name_hi": "नजीबाबाद",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "नगीना"
+    },
+    {
+      "ac_no": 18,
+      "ac_name_en": "Nagina",
+      "ac_name_hi": "नगीना",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "नगीना"
+    },
+    {
+      "ac_no": 19,
+      "ac_name_en": "Barhapur",
+      "ac_name_hi": "बढ़ापुर",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुरादाबाद"
+    },
+    {
+      "ac_no": 20,
+      "ac_name_en": "Dhampur",
+      "ac_name_hi": "धामपुर",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "नगीना"
+    },
+    {
+      "ac_no": 21,
+      "ac_name_en": "Nehtaur",
+      "ac_name_hi": "नहटौर",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "नगीना"
+    },
+    {
+      "ac_no": 22,
+      "ac_name_en": "Bijnor",
+      "ac_name_hi": "बिजनौर",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बिजनौर"
+    },
+    {
+      "ac_no": 23,
+      "ac_name_en": "Chandpur",
+      "ac_name_hi": "चांदपुर",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बिजनौर"
+    },
+    {
+      "ac_no": 24,
+      "ac_name_en": "Noorpur",
+      "ac_name_hi": "नूरपुर",
+      "district": "बिजनौर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "नगीना"
+    },
+    {
+      "ac_no": 25,
+      "ac_name_en": "Kanth",
+      "ac_name_hi": "कांठ",
+      "district": "मुरादाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुरादाबाद"
+    },
+    {
+      "ac_no": 26,
+      "ac_name_en": "Thakurdwara",
+      "ac_name_hi": "ठाकुरद्वारा",
+      "district": "मुरादाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुरादाबाद"
+    },
+    {
+      "ac_no": 27,
+      "ac_name_en": "Moradabad Rural",
+      "ac_name_hi": "मुरादाबाद देहात",
+      "district": "मुरादाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुरादाबाद"
+    },
+    {
+      "ac_no": 28,
+      "ac_name_en": "Moradabad Nagar",
+      "ac_name_hi": "मुरादाबाद नगर",
+      "district": "मुरादाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुरादाबाद"
+    },
+    {
+      "ac_no": 29,
+      "ac_name_en": "Kundarki",
+      "ac_name_hi": "कुन्दरकी",
+      "district": "मुरादाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "संभल"
+    },
+    {
+      "ac_no": 30,
+      "ac_name_en": "Bilari",
+      "ac_name_hi": "बिलारी",
+      "district": "मुरादाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "संभल"
+    },
+    {
+      "ac_no": 31,
+      "ac_name_en": "Chandausi",
+      "ac_name_hi": "चन्दौसी",
+      "district": "संभल",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "संभल"
+    },
+    {
+      "ac_no": 32,
+      "ac_name_en": "Asmoli",
+      "ac_name_hi": "असमौली",
+      "district": "संभल",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "संभल"
+    },
+    {
+      "ac_no": 33,
+      "ac_name_en": "Sambhal",
+      "ac_name_hi": "संभल",
+      "district": "संभल",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "संभल"
+    },
+    {
+      "ac_no": 34,
+      "ac_name_en": "Suar",
+      "ac_name_hi": "स्वार",
+      "district": "रामपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रामपुर"
+    },
+    {
+      "ac_no": 35,
+      "ac_name_en": "Chamraua",
+      "ac_name_hi": "चमरौआ",
+      "district": "रामपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रामपुर"
+    },
+    {
+      "ac_no": 36,
+      "ac_name_en": "Bilaspur",
+      "ac_name_hi": "बिलासपुर",
+      "district": "रामपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रामपुर"
+    },
+    {
+      "ac_no": 37,
+      "ac_name_en": "Rampur",
+      "ac_name_hi": "रामपुर",
+      "district": "रामपुर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रामपुर"
+    },
+    {
+      "ac_no": 38,
+      "ac_name_en": "Milak",
+      "ac_name_hi": "मिलक",
+      "district": "रामपुर",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "रामपुर"
+    },
+    {
+      "ac_no": 39,
+      "ac_name_en": "Dhanaura",
+      "ac_name_hi": "धनौरा",
+      "district": "अमरोहा",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "अमरोहा"
+    },
+    {
+      "ac_no": 40,
+      "ac_name_en": "Naugawan Sadat",
+      "ac_name_hi": "नौगावाँ सादात",
+      "district": "अमरोहा",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमरोहा"
+    },
+    {
+      "ac_no": 41,
+      "ac_name_en": "Amroha",
+      "ac_name_hi": "अमरोहा",
+      "district": "अमरोहा",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमरोहा"
+    },
+    {
+      "ac_no": 42,
+      "ac_name_en": "Hasanpur",
+      "ac_name_hi": "हसनपुर",
+      "district": "अमरोहा",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमरोहा"
+    },
+    {
+      "ac_no": 43,
+      "ac_name_en": "Siwalkhas",
+      "ac_name_hi": "सिवालखास",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बागपत"
+    },
+    {
+      "ac_no": 44,
+      "ac_name_en": "Sardhana",
+      "ac_name_hi": "सरधना",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मुजफ्फरनगर"
+    },
+    {
+      "ac_no": 45,
+      "ac_name_en": "Hastinapur",
+      "ac_name_hi": "हस्तिनापुर",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बिजनौर"
+    },
+    {
+      "ac_no": 46,
+      "ac_name_en": "Kithore",
+      "ac_name_hi": "किठौर",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मेरठ"
+    },
+    {
+      "ac_no": 47,
+      "ac_name_en": "Meerut Cantt",
+      "ac_name_hi": "मेरठ कैन्ट",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मेरठ"
+    },
+    {
+      "ac_no": 48,
+      "ac_name_en": "Meerut City",
+      "ac_name_hi": "मेरठ शहर",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मेरठ"
+    },
+    {
+      "ac_no": 49,
+      "ac_name_en": "Meerut South",
+      "ac_name_hi": "मेरठ दक्षिण",
+      "district": "मेरठ",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मेरठ"
+    },
+    {
+      "ac_no": 50,
+      "ac_name_en": "Chhaprauli",
+      "ac_name_hi": "छपरौली",
+      "district": "बागपत",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बागपत"
+    },
+    {
+      "ac_no": 51,
+      "ac_name_en": "Baraut",
+      "ac_name_hi": "बड़ौत",
+      "district": "बागपत",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बागपत"
+    },
+    {
+      "ac_no": 52,
+      "ac_name_en": "Baghpat",
+      "ac_name_hi": "बागपत",
+      "district": "बागपत",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बागपत"
+    },
+    {
+      "ac_no": 53,
+      "ac_name_en": "Loni",
+      "ac_name_hi": "लोनी",
+      "district": "गाजियाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजियाबाद"
+    },
+    {
+      "ac_no": 54,
+      "ac_name_en": "Muradnagar",
+      "ac_name_hi": "मुरादनगर",
+      "district": "गाजियाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजियाबाद"
+    },
+    {
+      "ac_no": 55,
+      "ac_name_en": "Sahibabad",
+      "ac_name_hi": "साहिबाबाद",
+      "district": "गाजियाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजियाबाद"
+    },
+    {
+      "ac_no": 56,
+      "ac_name_en": "Ghaziabad",
+      "ac_name_hi": "गाजियाबाद",
+      "district": "गाजियाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजियाबाद"
+    },
+    {
+      "ac_no": 57,
+      "ac_name_en": "Modi Nagar",
+      "ac_name_hi": "मोदीनगर",
+      "district": "गाजियाबाद",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बागपत"
+    },
+    {
+      "ac_no": 58,
+      "ac_name_en": "Dholana",
+      "ac_name_hi": "धौलाना",
+      "district": "हापुड़",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजियाबाद"
+    },
+    {
+      "ac_no": 59,
+      "ac_name_en": "Hapur",
+      "ac_name_hi": "हापुड़",
+      "district": "हापुड़",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मेरठ"
+    },
+    {
+      "ac_no": 60,
+      "ac_name_en": "Garhmukteshwar",
+      "ac_name_hi": "गढ़मुक्तेश्वर",
+      "district": "हापुड़",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमरोहा"
+    },
+    {
+      "ac_no": 61,
+      "ac_name_en": "Noida",
+      "ac_name_hi": "नोएडा",
+      "district": "गौतम बुद्ध नगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गौतम बुद्ध नगर"
+    },
+    {
+      "ac_no": 62,
+      "ac_name_en": "Dadri",
+      "ac_name_hi": "दादरी",
+      "district": "गौतम बुद्ध नगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गौतम बुद्ध नगर"
+    },
+    {
+      "ac_no": 63,
+      "ac_name_en": "Jewar",
+      "ac_name_hi": "जेवर",
+      "district": "गौतम बुद्ध नगर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गौतम बुद्ध नगर"
+    },
+    {
+      "ac_no": 64,
+      "ac_name_en": "Sikandrabad",
+      "ac_name_hi": "सिकन्द्राबाद",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गौतम बुद्ध नगर"
+    },
+    {
+      "ac_no": 65,
+      "ac_name_en": "Bulandshahr",
+      "ac_name_hi": "बुलंदशहर",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बुलंदशहर"
+    },
+    {
+      "ac_no": 66,
+      "ac_name_en": "Siana",
+      "ac_name_hi": "स्याना",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बुलंदशहर"
+    },
+    {
+      "ac_no": 67,
+      "ac_name_en": "Anupshahr",
+      "ac_name_hi": "अनुपशहर",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बुलंदशहर"
+    },
+    {
+      "ac_no": 68,
+      "ac_name_en": "Debai",
+      "ac_name_hi": "डिबाई",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बुलंदशहर"
+    },
+    {
+      "ac_no": 69,
+      "ac_name_en": "Shikarpur",
+      "ac_name_hi": "शिकारपुर",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बुलंदशहर"
+    },
+    {
+      "ac_no": 70,
+      "ac_name_en": "Khurja",
+      "ac_name_hi": "खुर्जा",
+      "district": "बुलंदशहर",
+      "region": "पश्चिम",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "गौतम बुद्ध नगर"
+    },
+    {
+      "ac_no": 71,
+      "ac_name_en": "Khair",
+      "ac_name_hi": "खैर",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "अलीगढ़"
+    },
+    {
+      "ac_no": 72,
+      "ac_name_en": "Barauli",
+      "ac_name_hi": "बरौली",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अलीगढ़"
+    },
+    {
+      "ac_no": 73,
+      "ac_name_en": "Atrauli",
+      "ac_name_hi": "अतरौली",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अलीगढ़"
+    },
+    {
+      "ac_no": 74,
+      "ac_name_en": "Chharra",
+      "ac_name_hi": "छर्रा",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हाथरस"
+    },
+    {
+      "ac_no": 75,
+      "ac_name_en": "Koil",
+      "ac_name_hi": "कोल",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अलीगढ़"
+    },
+    {
+      "ac_no": 76,
+      "ac_name_en": "Aligarh",
+      "ac_name_hi": "अलीगढ़",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अलीगढ़"
+    },
+    {
+      "ac_no": 77,
+      "ac_name_en": "Iglas",
+      "ac_name_hi": "इगलास",
+      "district": "अलीगढ़",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "हाथरस"
+    },
+    {
+      "ac_no": 78,
+      "ac_name_en": "Hathras",
+      "ac_name_hi": "हाथरस",
+      "district": "हाथरस",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "हाथरस"
+    },
+    {
+      "ac_no": 79,
+      "ac_name_en": "Sadabad",
+      "ac_name_hi": "सादाबाद",
+      "district": "हाथरस",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हाथरस"
+    },
+    {
+      "ac_no": 80,
+      "ac_name_en": "Sikandra Rao",
+      "ac_name_hi": "सिकन्द्रा राऊ",
+      "district": "हाथरस",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हाथरस"
+    },
+    {
+      "ac_no": 81,
+      "ac_name_en": "Chhata",
+      "ac_name_hi": "छाता",
+      "district": "मथुरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मथुरा"
+    },
+    {
+      "ac_no": 82,
+      "ac_name_en": "Mant",
+      "ac_name_hi": "मांट",
+      "district": "मथुरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मथुरा"
+    },
+    {
+      "ac_no": 83,
+      "ac_name_en": "Govardhan",
+      "ac_name_hi": "गोवर्धन",
+      "district": "मथुरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मथुरा"
+    },
+    {
+      "ac_no": 84,
+      "ac_name_en": "Mathura",
+      "ac_name_hi": "मथुरा",
+      "district": "मथुरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मथुरा"
+    },
+    {
+      "ac_no": 85,
+      "ac_name_en": "Baldev",
+      "ac_name_hi": "बलदेव",
+      "district": "मथुरा",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मथुरा"
+    },
+    {
+      "ac_no": 86,
+      "ac_name_en": "Etmadpur",
+      "ac_name_hi": "एत्मादपुर",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आगरा"
+    },
+    {
+      "ac_no": 87,
+      "ac_name_en": "Agra Cantt",
+      "ac_name_hi": "आगरा कैन्ट",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "आगरा"
+    },
+    {
+      "ac_no": 88,
+      "ac_name_en": "Agra South",
+      "ac_name_hi": "आगरा दक्षिण",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आगरा"
+    },
+    {
+      "ac_no": 89,
+      "ac_name_en": "Agra North",
+      "ac_name_hi": "आगरा उत्तर",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आगरा"
+    },
+    {
+      "ac_no": 90,
+      "ac_name_en": "Agra Rural",
+      "ac_name_hi": "आगरा ग्रामीण",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "फतेहपुर सीकरी"
+    },
+    {
+      "ac_no": 91,
+      "ac_name_en": "Fatehpur Sikri",
+      "ac_name_hi": "फतेहपुर सीकरी",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर सीकरी"
+    },
+    {
+      "ac_no": 92,
+      "ac_name_en": "Kheragarh",
+      "ac_name_hi": "खेरागढ़",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर सीकरी"
+    },
+    {
+      "ac_no": 93,
+      "ac_name_en": "Fatehabad",
+      "ac_name_hi": "फतेहाबाद",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर सीकरी"
+    },
+    {
+      "ac_no": 94,
+      "ac_name_en": "Bah",
+      "ac_name_hi": "बाह",
+      "district": "आगरा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर सीकरी"
+    },
+    {
+      "ac_no": 95,
+      "ac_name_en": "Tundla",
+      "ac_name_hi": "टून्डला",
+      "district": "फिरोजाबाद",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "फिरोजाबाद"
+    },
+    {
+      "ac_no": 96,
+      "ac_name_en": "Jasrana",
+      "ac_name_hi": "जसराना",
+      "district": "फिरोजाबाद",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फिरोजाबाद"
+    },
+    {
+      "ac_no": 97,
+      "ac_name_en": "Firozabad",
+      "ac_name_hi": "फिरोजाबाद",
+      "district": "फिरोजाबाद",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फिरोजाबाद"
+    },
+    {
+      "ac_no": 98,
+      "ac_name_en": "Shikohabad",
+      "ac_name_hi": "शिकोहाबाद",
+      "district": "फिरोजाबाद",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फिरोजाबाद"
+    },
+    {
+      "ac_no": 99,
+      "ac_name_en": "Sirsaganj",
+      "ac_name_hi": "सिरसागंज",
+      "district": "फिरोजाबाद",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फिरोजाबाद"
+    },
+    {
+      "ac_no": 100,
+      "ac_name_en": "Kasganj",
+      "ac_name_hi": "कासगंज",
+      "district": "कासगंज",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "एटा"
+    },
+    {
+      "ac_no": 101,
+      "ac_name_en": "Amanpur",
+      "ac_name_hi": "अमांपुर",
+      "district": "कासगंज",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "एटा"
+    },
+    {
+      "ac_no": 102,
+      "ac_name_en": "Patiyali",
+      "ac_name_hi": "पटियाली",
+      "district": "कासगंज",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "एटा"
+    },
+    {
+      "ac_no": 103,
+      "ac_name_en": "Aliganj",
+      "ac_name_hi": "अलीगंज",
+      "district": "एटा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फर्रूखाबाद"
+    },
+    {
+      "ac_no": 104,
+      "ac_name_en": "Etah",
+      "ac_name_hi": "एटा",
+      "district": "एटा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "एटा"
+    },
+    {
+      "ac_no": 105,
+      "ac_name_en": "Marhara",
+      "ac_name_hi": "मारहरा",
+      "district": "एटा",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "एटा"
+    },
+    {
+      "ac_no": 106,
+      "ac_name_en": "Jalesar",
+      "ac_name_hi": "जलेसर",
+      "district": "एटा",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "आगरा"
+    },
+    {
+      "ac_no": 107,
+      "ac_name_en": "Mainpuri",
+      "ac_name_hi": "मैनपुरी",
+      "district": "मैनपुरी",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मैनपुरी"
+    },
+    {
+      "ac_no": 108,
+      "ac_name_en": "Bhongaon",
+      "ac_name_hi": "भोगाँव",
+      "district": "मैनपुरी",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मैनपुरी"
+    },
+    {
+      "ac_no": 109,
+      "ac_name_en": "Kishni",
+      "ac_name_hi": "किशनी",
+      "district": "मैनपुरी",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मैनपुरी"
+    },
+    {
+      "ac_no": 110,
+      "ac_name_en": "Karhal",
+      "ac_name_hi": "करहल",
+      "district": "मैनपुरी",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मैनपुरी"
+    },
+    {
+      "ac_no": 111,
+      "ac_name_en": "Gunnaur",
+      "ac_name_hi": "गुन्नौर",
+      "district": "संभल",
+      "region": "पश्चिम",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बदायूं"
+    },
+    {
+      "ac_no": 112,
+      "ac_name_en": "Bisauli",
+      "ac_name_hi": "बिसौली",
+      "district": "बदायूं",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बदायूं"
+    },
+    {
+      "ac_no": 113,
+      "ac_name_en": "Sahaswan",
+      "ac_name_hi": "सहसवान",
+      "district": "बदायूं",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बदायूं"
+    },
+    {
+      "ac_no": 114,
+      "ac_name_en": "Bilsi",
+      "ac_name_hi": "बिल्सी",
+      "district": "बदायूं",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बदायूं"
+    },
+    {
+      "ac_no": 115,
+      "ac_name_en": "Badaun",
+      "ac_name_hi": "बदायूं",
+      "district": "बदायूं",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बदायूं"
+    },
+    {
+      "ac_no": 116,
+      "ac_name_en": "Shekhupur",
+      "ac_name_hi": "शेखुपुर",
+      "district": "बदायूं",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आंवला"
+    },
+    {
+      "ac_no": 117,
+      "ac_name_en": "Dataganj",
+      "ac_name_hi": "दातागंज",
+      "district": "बदायूं",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आंवला"
+    },
+    {
+      "ac_no": 118,
+      "ac_name_en": "Baheri",
+      "ac_name_hi": "बहेड़ी",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "पीलीभीत"
+    },
+    {
+      "ac_no": 119,
+      "ac_name_en": "Meerganj",
+      "ac_name_hi": "मीरगंज",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बरेली"
+    },
+    {
+      "ac_no": 120,
+      "ac_name_en": "Bhojipura",
+      "ac_name_hi": "भोजीपुरा",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बरेली"
+    },
+    {
+      "ac_no": 121,
+      "ac_name_en": "Nawabganj",
+      "ac_name_hi": "नवाबगंज",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बरेली"
+    },
+    {
+      "ac_no": 122,
+      "ac_name_en": "Faridpur",
+      "ac_name_hi": "फरीदपुर",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "आंवला"
+    },
+    {
+      "ac_no": 123,
+      "ac_name_en": "Bithari Chainpur",
+      "ac_name_hi": "बिथरी चैनपुर",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आंवला"
+    },
+    {
+      "ac_no": 124,
+      "ac_name_en": "Bareilly City",
+      "ac_name_hi": "बरेली शहर",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बरेली"
+    },
+    {
+      "ac_no": 125,
+      "ac_name_en": "Bareilly Cantt",
+      "ac_name_hi": "बरेली कैन्ट",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बरेली"
+    },
+    {
+      "ac_no": 126,
+      "ac_name_en": "Aonla",
+      "ac_name_hi": "आंवला",
+      "district": "बरेली",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आंवला"
+    },
+    {
+      "ac_no": 127,
+      "ac_name_en": "Pilibhit",
+      "ac_name_hi": "पीलीभीत",
+      "district": "पीलीभीत",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "पीलीभीत"
+    },
+    {
+      "ac_no": 128,
+      "ac_name_en": "Barkhera",
+      "ac_name_hi": "बरखेड़ा",
+      "district": "पीलीभीत",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "पीलीभीत"
+    },
+    {
+      "ac_no": 129,
+      "ac_name_en": "Puranpur",
+      "ac_name_hi": "पूरनपुर",
+      "district": "पीलीभीत",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "पीलीभीत"
+    },
+    {
+      "ac_no": 130,
+      "ac_name_en": "Bisalpur",
+      "ac_name_hi": "बीसलपुर",
+      "district": "पीलीभीत",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "पीलीभीत"
+    },
+    {
+      "ac_no": 131,
+      "ac_name_en": "Katra",
+      "ac_name_hi": "कटरा",
+      "district": "शाहजहांपुर",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "शाहजहांपुर"
+    },
+    {
+      "ac_no": 132,
+      "ac_name_en": "Jalalabad",
+      "ac_name_hi": "जलालाबाद",
+      "district": "शाहजहांपुर",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "शाहजहांपुर"
+    },
+    {
+      "ac_no": 133,
+      "ac_name_en": "Tilhar",
+      "ac_name_hi": "तिलहर",
+      "district": "शाहजहांपुर",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "शाहजहांपुर"
+    },
+    {
+      "ac_no": 134,
+      "ac_name_en": "Powayan",
+      "ac_name_hi": "पुवायां",
+      "district": "शाहजहांपुर",
+      "region": "ब्रज",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "शाहजहांपुर"
+    },
+    {
+      "ac_no": 135,
+      "ac_name_en": "Shahjahanpur",
+      "ac_name_hi": "शाहजहांपुर",
+      "district": "शाहजहांपुर",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "शाहजहांपुर"
+    },
+    {
+      "ac_no": 136,
+      "ac_name_en": "Dadraul",
+      "ac_name_hi": "ददरौल",
+      "district": "शाहजहांपुर",
+      "region": "ब्रज",
+      "seat_category": "सामान्य",
+      "lok_sabha": "शाहजहांपुर"
+    },
+    {
+      "ac_no": 137,
+      "ac_name_en": "Paliya",
+      "ac_name_hi": "पलिया",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "खीरी"
+    },
+    {
+      "ac_no": 138,
+      "ac_name_en": "Nighasan",
+      "ac_name_hi": "निघासन",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "खीरी"
+    },
+    {
+      "ac_no": 139,
+      "ac_name_en": "Gola Gokrannath",
+      "ac_name_hi": "गोला गोकर्णनाथ",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "खीरी"
+    },
+    {
+      "ac_no": 140,
+      "ac_name_en": "Sri Nagar",
+      "ac_name_hi": "श्रीनगर",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "खीरी"
+    },
+    {
+      "ac_no": 141,
+      "ac_name_en": "Dhaurahra",
+      "ac_name_hi": "धौरहरा",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "धौरहरा"
+    },
+    {
+      "ac_no": 142,
+      "ac_name_en": "Lakhimpur",
+      "ac_name_hi": "लखीमपुर",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "खीरी"
+    },
+    {
+      "ac_no": 143,
+      "ac_name_en": "Kasta",
+      "ac_name_hi": "कस्ता",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "धौरहरा"
+    },
+    {
+      "ac_no": 144,
+      "ac_name_en": "Mohammadi",
+      "ac_name_hi": "मोहम्मदी",
+      "district": "लखीमपुर खीरी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "धौरहरा"
+    },
+    {
+      "ac_no": 145,
+      "ac_name_en": "Maholi",
+      "ac_name_hi": "महोली",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "धौरहरा"
+    },
+    {
+      "ac_no": 146,
+      "ac_name_en": "Sitapur",
+      "ac_name_hi": "सीतापुर",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सीतापुर"
+    },
+    {
+      "ac_no": 147,
+      "ac_name_en": "Hargaon",
+      "ac_name_hi": "हरगांव",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "धौरहरा"
+    },
+    {
+      "ac_no": 148,
+      "ac_name_en": "Laharpur",
+      "ac_name_hi": "लहरपुर",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सीतापुर"
+    },
+    {
+      "ac_no": 149,
+      "ac_name_en": "Biswan",
+      "ac_name_hi": "बिसवां",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सीतापुर"
+    },
+    {
+      "ac_no": 150,
+      "ac_name_en": "Sevata",
+      "ac_name_hi": "सेवता",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सीतापुर"
+    },
+    {
+      "ac_no": 151,
+      "ac_name_en": "Mahmoodabad",
+      "ac_name_hi": "महमूदाबाद",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सीतापुर"
+    },
+    {
+      "ac_no": 152,
+      "ac_name_en": "Sidhauli",
+      "ac_name_hi": "सिधौली",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मोहनलालगंज"
+    },
+    {
+      "ac_no": 153,
+      "ac_name_en": "Mishrikh",
+      "ac_name_hi": "मिश्रिख",
+      "district": "सीतापुर",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मिश्रिख"
+    },
+    {
+      "ac_no": 154,
+      "ac_name_en": "Sawayazpur",
+      "ac_name_hi": "सवायजपुर",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हरदोई"
+    },
+    {
+      "ac_no": 155,
+      "ac_name_en": "Shahabad",
+      "ac_name_hi": "शाहाबाद",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हरदोई"
+    },
+    {
+      "ac_no": 156,
+      "ac_name_en": "Hardoi",
+      "ac_name_hi": "हरदोई",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हरदोई"
+    },
+    {
+      "ac_no": 157,
+      "ac_name_en": "Gopamau",
+      "ac_name_hi": "गोपामऊ",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "हरदोई"
+    },
+    {
+      "ac_no": 158,
+      "ac_name_en": "Sandi",
+      "ac_name_hi": "सांडी",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "हरदोई"
+    },
+    {
+      "ac_no": 159,
+      "ac_name_en": "Bilgram Mallanwan",
+      "ac_name_hi": "बिलग्राम मल्लावां",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मिश्रिख"
+    },
+    {
+      "ac_no": 160,
+      "ac_name_en": "Balamau",
+      "ac_name_hi": "बालामऊ",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मिश्रिख"
+    },
+    {
+      "ac_no": 161,
+      "ac_name_en": "Sandila",
+      "ac_name_hi": "सण्डीला",
+      "district": "हरदोई",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मिश्रिख"
+    },
+    {
+      "ac_no": 162,
+      "ac_name_en": "Bangarmau",
+      "ac_name_hi": "बांगरमऊ",
+      "district": "उन्नाव",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "उन्नाव"
+    },
+    {
+      "ac_no": 163,
+      "ac_name_en": "Safipur",
+      "ac_name_hi": "सफीपुर",
+      "district": "उन्नाव",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "उन्नाव"
+    },
+    {
+      "ac_no": 164,
+      "ac_name_en": "Mohan",
+      "ac_name_hi": "मोहान",
+      "district": "उन्नाव",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "उन्नाव"
+    },
+    {
+      "ac_no": 165,
+      "ac_name_en": "Unnao",
+      "ac_name_hi": "उन्नाव",
+      "district": "उन्नाव",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "उन्नाव"
+    },
+    {
+      "ac_no": 166,
+      "ac_name_en": "Bhagwantnagar",
+      "ac_name_hi": "भगवन्तनगर",
+      "district": "उन्नाव",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "उन्नाव"
+    },
+    {
+      "ac_no": 167,
+      "ac_name_en": "Purwa",
+      "ac_name_hi": "पुरवा",
+      "district": "उन्नाव",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "उन्नाव"
+    },
+    {
+      "ac_no": 168,
+      "ac_name_en": "Malihabad",
+      "ac_name_hi": "मलिहाबाद",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मोहनलालगंज"
+    },
+    {
+      "ac_no": 169,
+      "ac_name_en": "Bakshi Ka Talab",
+      "ac_name_hi": "बख्शी का तालाब",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मोहनलालगंज"
+    },
+    {
+      "ac_no": 170,
+      "ac_name_en": "Sarojini Nagar",
+      "ac_name_hi": "सरोजनी नगर",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मोहनलालगंज"
+    },
+    {
+      "ac_no": 171,
+      "ac_name_en": "Lucknow West",
+      "ac_name_hi": "लखनऊ पश्चिम",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लखनऊ"
+    },
+    {
+      "ac_no": 172,
+      "ac_name_en": "Lucknow North",
+      "ac_name_hi": "लखनऊ उत्तर",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लखनऊ"
+    },
+    {
+      "ac_no": 173,
+      "ac_name_en": "Lucknow East",
+      "ac_name_hi": "लखनऊ पूर्व",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लखनऊ"
+    },
+    {
+      "ac_no": 174,
+      "ac_name_en": "Lucknow Central",
+      "ac_name_hi": "लखनऊ मध्य",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लखनऊ"
+    },
+    {
+      "ac_no": 175,
+      "ac_name_en": "Lucknow Cantt",
+      "ac_name_hi": "लखनऊ कैंट",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लखनऊ"
+    },
+    {
+      "ac_no": 176,
+      "ac_name_en": "Mohanlalganj",
+      "ac_name_hi": "मोहनलालगंज",
+      "district": "लखनऊ",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मोहनलालगंज"
+    },
+    {
+      "ac_no": 177,
+      "ac_name_en": "Bachrawan",
+      "ac_name_hi": "बछरावां",
+      "district": "रायबरेली",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "रायबरेली"
+    },
+    {
+      "ac_no": 178,
+      "ac_name_en": "Tiloi",
+      "ac_name_hi": "तिलोई",
+      "district": "अमेठी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमेठी"
+    },
+    {
+      "ac_no": 179,
+      "ac_name_en": "Harchandpur",
+      "ac_name_hi": "हरचंदपुर",
+      "district": "रायबरेली",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रायबरेली"
+    },
+    {
+      "ac_no": 180,
+      "ac_name_en": "Rae Bareli",
+      "ac_name_hi": "रायबरेली",
+      "district": "रायबरेली",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रायबरेली"
+    },
+    {
+      "ac_no": 181,
+      "ac_name_en": "Salon",
+      "ac_name_hi": "सलोन",
+      "district": "रायबरेली",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "अमेठी"
+    },
+    {
+      "ac_no": 182,
+      "ac_name_en": "Sareni",
+      "ac_name_hi": "सरेनी",
+      "district": "रायबरेली",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रायबरेली"
+    },
+    {
+      "ac_no": 183,
+      "ac_name_en": "Unchahar",
+      "ac_name_hi": "ऊंचाहार",
+      "district": "रायबरेली",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "रायबरेली"
+    },
+    {
+      "ac_no": 184,
+      "ac_name_en": "Jagdishpur",
+      "ac_name_hi": "जगदीशपुर",
+      "district": "अमेठी",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "अमेठी"
+    },
+    {
+      "ac_no": 185,
+      "ac_name_en": "Gauriganj",
+      "ac_name_hi": "गौरीगंज",
+      "district": "अमेठी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमेठी"
+    },
+    {
+      "ac_no": 186,
+      "ac_name_en": "Amethi",
+      "ac_name_hi": "अमेठी",
+      "district": "अमेठी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अमेठी"
+    },
+    {
+      "ac_no": 187,
+      "ac_name_en": "Isauli",
+      "ac_name_hi": "इसौली",
+      "district": "सुल्तानपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सुल्तानपुर"
+    },
+    {
+      "ac_no": 188,
+      "ac_name_en": "Sultanpur",
+      "ac_name_hi": "सुल्तानपुर",
+      "district": "सुल्तानपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सुल्तानपुर"
+    },
+    {
+      "ac_no": 189,
+      "ac_name_en": "Sultanpur Sadar",
+      "ac_name_hi": "सुल्तानपुर सदर",
+      "district": "सुल्तानपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सुल्तानपुर"
+    },
+    {
+      "ac_no": 190,
+      "ac_name_en": "Lambhua",
+      "ac_name_hi": "लम्भुआ",
+      "district": "सुल्तानपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सुल्तानपुर"
+    },
+    {
+      "ac_no": 191,
+      "ac_name_en": "Kadipur",
+      "ac_name_hi": "कादीपुर",
+      "district": "सुल्तानपुर",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "सुल्तानपुर"
+    },
+    {
+      "ac_no": 192,
+      "ac_name_en": "Kaimganj",
+      "ac_name_hi": "कायमगंज",
+      "district": "फर्रुखाबाद",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "फर्रूखाबाद"
+    },
+    {
+      "ac_no": 193,
+      "ac_name_en": "Amritpur",
+      "ac_name_hi": "अमृतपुर",
+      "district": "फर्रुखाबाद",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फर्रूखाबाद"
+    },
+    {
+      "ac_no": 194,
+      "ac_name_en": "Farrukhabad",
+      "ac_name_hi": "फर्रूखाबाद",
+      "district": "फर्रुखाबाद",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फर्रूखाबाद"
+    },
+    {
+      "ac_no": 195,
+      "ac_name_en": "Bhojpur",
+      "ac_name_hi": "भोजपुर",
+      "district": "फर्रुखाबाद",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फर्रूखाबाद"
+    },
+    {
+      "ac_no": 196,
+      "ac_name_en": "Chhibramau",
+      "ac_name_hi": "छिबरामऊ",
+      "district": "कन्नौज",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कन्नौज"
+    },
+    {
+      "ac_no": 197,
+      "ac_name_en": "Tirwa",
+      "ac_name_hi": "तिर्वा",
+      "district": "कन्नौज",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कन्नौज"
+    },
+    {
+      "ac_no": 198,
+      "ac_name_en": "Kannauj",
+      "ac_name_hi": "कन्नौज",
+      "district": "कन्नौज",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "कन्नौज"
+    },
+    {
+      "ac_no": 199,
+      "ac_name_en": "Jaswant Nagar",
+      "ac_name_hi": "जसवन्त नगर",
+      "district": "इटावा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मैनपुरी"
+    },
+    {
+      "ac_no": 200,
+      "ac_name_en": "Etawah",
+      "ac_name_hi": "इटावा",
+      "district": "इटावा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "इटावा"
+    },
+    {
+      "ac_no": 201,
+      "ac_name_en": "Bharthana",
+      "ac_name_hi": "भरथना",
+      "district": "इटावा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "इटावा"
+    },
+    {
+      "ac_no": 202,
+      "ac_name_en": "Bidhuna",
+      "ac_name_hi": "बिधूना",
+      "district": "औरैया",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कन्नौज"
+    },
+    {
+      "ac_no": 203,
+      "ac_name_en": "Dibiyapur",
+      "ac_name_hi": "दिबियापुर",
+      "district": "औरैया",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "इटावा"
+    },
+    {
+      "ac_no": 204,
+      "ac_name_en": "Auraiya",
+      "ac_name_hi": "औरैया",
+      "district": "औरैया",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "इटावा"
+    },
+    {
+      "ac_no": 205,
+      "ac_name_en": "Rasulabad",
+      "ac_name_hi": "रसूलाबाद",
+      "district": "कानपुर देहात",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "कन्नौज"
+    },
+    {
+      "ac_no": 206,
+      "ac_name_en": "Akbarpur Rania",
+      "ac_name_hi": "अकबरपुर रनिया",
+      "district": "कानपुर देहात",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अकबरपुर"
+    },
+    {
+      "ac_no": 207,
+      "ac_name_en": "Sikandra",
+      "ac_name_hi": "सिकन्दरा",
+      "district": "कानपुर देहात",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "इटावा"
+    },
+    {
+      "ac_no": 208,
+      "ac_name_en": "Bhognipur",
+      "ac_name_hi": "भोगनीपुर",
+      "district": "कानपुर देहात",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जालौन"
+    },
+    {
+      "ac_no": 209,
+      "ac_name_en": "Bilhaur",
+      "ac_name_hi": "बिल्हौर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मिश्रिख"
+    },
+    {
+      "ac_no": 210,
+      "ac_name_en": "Bithoor",
+      "ac_name_hi": "बिठूर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अकबरपुर"
+    },
+    {
+      "ac_no": 211,
+      "ac_name_en": "Kalyanpur",
+      "ac_name_hi": "कल्यानपुर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अकबरपुर"
+    },
+    {
+      "ac_no": 212,
+      "ac_name_en": "Govind Nagar",
+      "ac_name_hi": "गोविन्द नगर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कानपुर"
+    },
+    {
+      "ac_no": 213,
+      "ac_name_en": "Sishamau",
+      "ac_name_hi": "सीसामऊ",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कानपुर"
+    },
+    {
+      "ac_no": 214,
+      "ac_name_en": "Arya Nagar",
+      "ac_name_hi": "आर्य नगर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कानपुर"
+    },
+    {
+      "ac_no": 215,
+      "ac_name_en": "Kidwai Nagar",
+      "ac_name_hi": "किदवई नगर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कानपुर"
+    },
+    {
+      "ac_no": 216,
+      "ac_name_en": "Kanpur Cantt",
+      "ac_name_hi": "कानपुर कैंट",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कानपुर"
+    },
+    {
+      "ac_no": 217,
+      "ac_name_en": "Maharajpur",
+      "ac_name_hi": "महाराजपुर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अकबरपुर"
+    },
+    {
+      "ac_no": 218,
+      "ac_name_en": "Ghatampur",
+      "ac_name_hi": "घाटमपुर",
+      "district": "कानपुर नगर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "अकबरपुर"
+    },
+    {
+      "ac_no": 219,
+      "ac_name_en": "Madhogarh",
+      "ac_name_hi": "माधोगढ़",
+      "district": "जालौन",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जालौन"
+    },
+    {
+      "ac_no": 220,
+      "ac_name_en": "Kalpi",
+      "ac_name_hi": "कालपी",
+      "district": "जालौन",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जालौन"
+    },
+    {
+      "ac_no": 221,
+      "ac_name_en": "Orai",
+      "ac_name_hi": "उरई",
+      "district": "जालौन",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "जालौन"
+    },
+    {
+      "ac_no": 222,
+      "ac_name_en": "Babina",
+      "ac_name_hi": "बबीना",
+      "district": "झांसी",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "झांसी"
+    },
+    {
+      "ac_no": 223,
+      "ac_name_en": "Jhansi Nagar",
+      "ac_name_hi": "झांसी नगर",
+      "district": "झांसी",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "झांसी"
+    },
+    {
+      "ac_no": 224,
+      "ac_name_en": "Mauranipur",
+      "ac_name_hi": "मऊरानीपुर",
+      "district": "झांसी",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "झांसी"
+    },
+    {
+      "ac_no": 225,
+      "ac_name_en": "Garautha",
+      "ac_name_hi": "गरौठा",
+      "district": "झांसी",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जालौन"
+    },
+    {
+      "ac_no": 226,
+      "ac_name_en": "Lalitpur",
+      "ac_name_hi": "ललितपुर",
+      "district": "ललितपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "झांसी"
+    },
+    {
+      "ac_no": 227,
+      "ac_name_en": "Mehroni",
+      "ac_name_hi": "महरौनी",
+      "district": "ललितपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "झांसी"
+    },
+    {
+      "ac_no": 228,
+      "ac_name_en": "Hamirpur",
+      "ac_name_hi": "हमीरपुर",
+      "district": "हमीरपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हमीरपुर"
+    },
+    {
+      "ac_no": 229,
+      "ac_name_en": "Rath",
+      "ac_name_hi": "राठ",
+      "district": "हमीरपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "हमीरपुर"
+    },
+    {
+      "ac_no": 230,
+      "ac_name_en": "Mahoba",
+      "ac_name_hi": "महोबा",
+      "district": "महोबा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हमीरपुर"
+    },
+    {
+      "ac_no": 231,
+      "ac_name_en": "Charkhari",
+      "ac_name_hi": "चरखारी",
+      "district": "महोबा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हमीरपुर"
+    },
+    {
+      "ac_no": 232,
+      "ac_name_en": "Tindwari",
+      "ac_name_hi": "तिन्दवारी",
+      "district": "बांदा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "हमीरपुर"
+    },
+    {
+      "ac_no": 233,
+      "ac_name_en": "Baberu",
+      "ac_name_hi": "बबेरू",
+      "district": "बांदा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांदा"
+    },
+    {
+      "ac_no": 234,
+      "ac_name_en": "Naraini",
+      "ac_name_hi": "नरैनी",
+      "district": "बांदा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बांदा"
+    },
+    {
+      "ac_no": 235,
+      "ac_name_en": "Banda",
+      "ac_name_hi": "बांदा",
+      "district": "बांदा",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांदा"
+    },
+    {
+      "ac_no": 236,
+      "ac_name_en": "Chitrakoot",
+      "ac_name_hi": "चित्रकूट",
+      "district": "चित्रकूट",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांदा"
+    },
+    {
+      "ac_no": 237,
+      "ac_name_en": "Manikpur",
+      "ac_name_hi": "मानिकपुर",
+      "district": "चित्रकूट",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांदा"
+    },
+    {
+      "ac_no": 238,
+      "ac_name_en": "Jahanabad",
+      "ac_name_hi": "जहानाबाद",
+      "district": "फतेहपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर"
+    },
+    {
+      "ac_no": 239,
+      "ac_name_en": "Bindki",
+      "ac_name_hi": "बिन्दकी",
+      "district": "फतेहपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर"
+    },
+    {
+      "ac_no": 240,
+      "ac_name_en": "Fatehpur",
+      "ac_name_hi": "फतेहपुर",
+      "district": "फतेहपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर"
+    },
+    {
+      "ac_no": 241,
+      "ac_name_en": "Ayah Shah",
+      "ac_name_hi": "अयाह शाह",
+      "district": "फतेहपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर"
+    },
+    {
+      "ac_no": 242,
+      "ac_name_en": "Husainganj",
+      "ac_name_hi": "हुसैनगंज",
+      "district": "फतेहपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फतेहपुर"
+    },
+    {
+      "ac_no": 243,
+      "ac_name_en": "Khaga",
+      "ac_name_hi": "खागा",
+      "district": "फतेहपुर",
+      "region": "कानपुर-बुंदेलखंड",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "फतेहपुर"
+    },
+    {
+      "ac_no": 244,
+      "ac_name_en": "Rampur Khas",
+      "ac_name_hi": "रामपुर खास",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "प्रतापगढ़"
+    },
+    {
+      "ac_no": 245,
+      "ac_name_en": "Babaganj",
+      "ac_name_hi": "बाबागंज",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "कौशाम्बी"
+    },
+    {
+      "ac_no": 246,
+      "ac_name_en": "Kunda",
+      "ac_name_hi": "कुंडा",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कौशाम्बी"
+    },
+    {
+      "ac_no": 247,
+      "ac_name_en": "Vishwanathganj",
+      "ac_name_hi": "विश्वनाथगंज",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "प्रतापगढ़"
+    },
+    {
+      "ac_no": 248,
+      "ac_name_en": "Pratapgarh",
+      "ac_name_hi": "प्रतापगढ़",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "प्रतापगढ़"
+    },
+    {
+      "ac_no": 249,
+      "ac_name_en": "Patti",
+      "ac_name_hi": "पट्टी",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "प्रतापगढ़"
+    },
+    {
+      "ac_no": 250,
+      "ac_name_en": "Raniganj",
+      "ac_name_hi": "रानीगंज",
+      "district": "प्रतापगढ़",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "प्रतापगढ़"
+    },
+    {
+      "ac_no": 251,
+      "ac_name_en": "Sirathu",
+      "ac_name_hi": "सिराथू",
+      "district": "कौशाम्बी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कौशाम्बी"
+    },
+    {
+      "ac_no": 252,
+      "ac_name_en": "Manjhanpur",
+      "ac_name_hi": "मंझनपुर",
+      "district": "कौशाम्बी",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "कौशाम्बी"
+    },
+    {
+      "ac_no": 253,
+      "ac_name_en": "Chayal",
+      "ac_name_hi": "चायल",
+      "district": "कौशाम्बी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कौशाम्बी"
+    },
+    {
+      "ac_no": 254,
+      "ac_name_en": "Phaphamau",
+      "ac_name_hi": "फाफामऊ",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फूलपुर"
+    },
+    {
+      "ac_no": 255,
+      "ac_name_en": "Soraon",
+      "ac_name_hi": "सोरांव",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "फूलपुर"
+    },
+    {
+      "ac_no": 256,
+      "ac_name_en": "Phulpur",
+      "ac_name_hi": "फूलपुर",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फूलपुर"
+    },
+    {
+      "ac_no": 257,
+      "ac_name_en": "Pratappur",
+      "ac_name_hi": "प्रतापपुर",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "भदोही"
+    },
+    {
+      "ac_no": 258,
+      "ac_name_en": "Handia",
+      "ac_name_hi": "हण्डिया",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "भदोही"
+    },
+    {
+      "ac_no": 259,
+      "ac_name_en": "Meja",
+      "ac_name_hi": "मेजा",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "इलाहाबाद"
+    },
+    {
+      "ac_no": 260,
+      "ac_name_en": "Karachhana",
+      "ac_name_hi": "करछना",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "इलाहाबाद"
+    },
+    {
+      "ac_no": 261,
+      "ac_name_en": "Allahabad West",
+      "ac_name_hi": "इलाहाबाद पश्चिमी",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फूलपुर"
+    },
+    {
+      "ac_no": 262,
+      "ac_name_en": "Allahabad North",
+      "ac_name_hi": "इलाहाबाद उत्तरी",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फूलपुर"
+    },
+    {
+      "ac_no": 263,
+      "ac_name_en": "Allahabad South",
+      "ac_name_hi": "इलाहाबाद दक्षिणी",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "इलाहाबाद"
+    },
+    {
+      "ac_no": 264,
+      "ac_name_en": "Bara",
+      "ac_name_hi": "बारा",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "इलाहाबाद"
+    },
+    {
+      "ac_no": 265,
+      "ac_name_en": "Koraon",
+      "ac_name_hi": "कोरांव",
+      "district": "प्रयागराज",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "इलाहाबाद"
+    },
+    {
+      "ac_no": 266,
+      "ac_name_en": "Kursi",
+      "ac_name_hi": "कुर्सी",
+      "district": "बाराबंकी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बाराबंकी"
+    },
+    {
+      "ac_no": 267,
+      "ac_name_en": "Ramnagar",
+      "ac_name_hi": "रामनगर",
+      "district": "बाराबंकी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बाराबंकी"
+    },
+    {
+      "ac_no": 268,
+      "ac_name_en": "Barabanki",
+      "ac_name_hi": "बाराबंकी",
+      "district": "बाराबंकी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बाराबंकी"
+    },
+    {
+      "ac_no": 269,
+      "ac_name_en": "Zaidpur",
+      "ac_name_hi": "जैदपुर",
+      "district": "बाराबंकी",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बाराबंकी"
+    },
+    {
+      "ac_no": 270,
+      "ac_name_en": "Dariyabad",
+      "ac_name_hi": "दरियाबाद",
+      "district": "बाराबंकी",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फैजाबाद"
+    },
+    {
+      "ac_no": 271,
+      "ac_name_en": "Rudauli",
+      "ac_name_hi": "रूदौली",
+      "district": "अयोध्या",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फैजाबाद"
+    },
+    {
+      "ac_no": 272,
+      "ac_name_en": "Haidergarh",
+      "ac_name_hi": "हैदरगढ़",
+      "district": "बाराबंकी",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बाराबंकी"
+    },
+    {
+      "ac_no": 273,
+      "ac_name_en": "Milkipur",
+      "ac_name_hi": "मिल्कीपुर",
+      "district": "अयोध्या",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "फैजाबाद"
+    },
+    {
+      "ac_no": 274,
+      "ac_name_en": "Bikapur",
+      "ac_name_hi": "बीकापुर",
+      "district": "अयोध्या",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फैजाबाद"
+    },
+    {
+      "ac_no": 275,
+      "ac_name_en": "Ayodhya",
+      "ac_name_hi": "अयोध्या",
+      "district": "अयोध्या",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "फैजाबाद"
+    },
+    {
+      "ac_no": 276,
+      "ac_name_en": "Gosainganj",
+      "ac_name_hi": "गोशाईगंज",
+      "district": "अयोध्या",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अम्बेडकर नगर"
+    },
+    {
+      "ac_no": 277,
+      "ac_name_en": "Katehari",
+      "ac_name_hi": "कटेहरी",
+      "district": "अम्बेडकर नगर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अम्बेडकर नगर"
+    },
+    {
+      "ac_no": 278,
+      "ac_name_en": "Tanda",
+      "ac_name_hi": "टाण्डा",
+      "district": "अम्बेडकर नगर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अम्बेडकर नगर"
+    },
+    {
+      "ac_no": 279,
+      "ac_name_en": "Alapur",
+      "ac_name_hi": "आलापुर",
+      "district": "अम्बेडकर नगर",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "संत कबीर नगर"
+    },
+    {
+      "ac_no": 280,
+      "ac_name_en": "Jalalpur",
+      "ac_name_hi": "जलालपुर",
+      "district": "अम्बेडकर नगर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अम्बेडकर नगर"
+    },
+    {
+      "ac_no": 281,
+      "ac_name_en": "Akbarpur",
+      "ac_name_hi": "अकबरपुर",
+      "district": "अम्बेडकर नगर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "अम्बेडकर नगर"
+    },
+    {
+      "ac_no": 282,
+      "ac_name_en": "Balha",
+      "ac_name_hi": "बलहा",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बहराइच"
+    },
+    {
+      "ac_no": 283,
+      "ac_name_en": "Nanpara",
+      "ac_name_hi": "नानपारा",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बहराइच"
+    },
+    {
+      "ac_no": 284,
+      "ac_name_en": "Matera",
+      "ac_name_hi": "मटेरा",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बहराइच"
+    },
+    {
+      "ac_no": 285,
+      "ac_name_en": "Mahasi",
+      "ac_name_hi": "महसी",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बहराइच"
+    },
+    {
+      "ac_no": 286,
+      "ac_name_en": "Bahraich",
+      "ac_name_hi": "बहराइच",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बहराइच"
+    },
+    {
+      "ac_no": 287,
+      "ac_name_en": "Payagpur",
+      "ac_name_hi": "पयागपुर",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैसरगंज"
+    },
+    {
+      "ac_no": 288,
+      "ac_name_en": "Kaiserganj",
+      "ac_name_hi": "कैसरगंज",
+      "district": "बहराइच",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैसरगंज"
+    },
+    {
+      "ac_no": 289,
+      "ac_name_en": "Bhinga",
+      "ac_name_hi": "भिनगा",
+      "district": "श्रावस्ती",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "श्रावस्ती"
+    },
+    {
+      "ac_no": 290,
+      "ac_name_en": "Shrawasti",
+      "ac_name_hi": "श्रावस्ती",
+      "district": "श्रावस्ती",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "श्रावस्ती"
+    },
+    {
+      "ac_no": 291,
+      "ac_name_en": "Tulsipur",
+      "ac_name_hi": "तुलसीपुर",
+      "district": "बलरामपुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "श्रावस्ती"
+    },
+    {
+      "ac_no": 292,
+      "ac_name_en": "Gainsari",
+      "ac_name_hi": "गैंसड़ी",
+      "district": "बलरामपुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "श्रावस्ती"
+    },
+    {
+      "ac_no": 293,
+      "ac_name_en": "Utraula",
+      "ac_name_hi": "उतरौला",
+      "district": "बलरामपुर",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोंडा"
+    },
+    {
+      "ac_no": 294,
+      "ac_name_en": "Balrampur",
+      "ac_name_hi": "बलरामपुर",
+      "district": "बलरामपुर",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "श्रावस्ती"
+    },
+    {
+      "ac_no": 295,
+      "ac_name_en": "Mehnaun",
+      "ac_name_hi": "मेहनौन",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोंडा"
+    },
+    {
+      "ac_no": 296,
+      "ac_name_en": "Gonda",
+      "ac_name_hi": "गोंडा",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोंडा"
+    },
+    {
+      "ac_no": 297,
+      "ac_name_en": "Katra Bazar",
+      "ac_name_hi": "कटरा बाजार",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैसरगंज"
+    },
+    {
+      "ac_no": 298,
+      "ac_name_en": "Colonelganj",
+      "ac_name_hi": "करनैलगंज",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैसरगंज"
+    },
+    {
+      "ac_no": 299,
+      "ac_name_en": "Tarabganj",
+      "ac_name_hi": "तरबगंज",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कैसरगंज"
+    },
+    {
+      "ac_no": 300,
+      "ac_name_en": "Mankapur",
+      "ac_name_hi": "मनकापुर",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "गोंडा"
+    },
+    {
+      "ac_no": 301,
+      "ac_name_en": "Gaura",
+      "ac_name_hi": "गौरा",
+      "district": "गोंडा",
+      "region": "अवध",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोंडा"
+    },
+    {
+      "ac_no": 302,
+      "ac_name_en": "Shohratgarh",
+      "ac_name_hi": "शोहरतगढ़",
+      "district": "सिद्धार्थनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "डुमरियागंज"
+    },
+    {
+      "ac_no": 303,
+      "ac_name_en": "Kapilvastu",
+      "ac_name_hi": "कपिलवस्तु",
+      "district": "सिद्धार्थनगर",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "डुमरियागंज"
+    },
+    {
+      "ac_no": 304,
+      "ac_name_en": "Bansi",
+      "ac_name_hi": "बांसी",
+      "district": "सिद्धार्थनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "डुमरियागंज"
+    },
+    {
+      "ac_no": 305,
+      "ac_name_en": "Itwa",
+      "ac_name_hi": "इटवा",
+      "district": "सिद्धार्थनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "डुमरियागंज"
+    },
+    {
+      "ac_no": 306,
+      "ac_name_en": "Domariyaganj",
+      "ac_name_hi": "डुमरियागंज",
+      "district": "सिद्धार्थनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "डुमरियागंज"
+    },
+    {
+      "ac_no": 307,
+      "ac_name_en": "Harraiya",
+      "ac_name_hi": "हरैया",
+      "district": "बस्ती",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बस्ती"
+    },
+    {
+      "ac_no": 308,
+      "ac_name_en": "Kaptanganj",
+      "ac_name_hi": "कप्तानगंज",
+      "district": "बस्ती",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बस्ती"
+    },
+    {
+      "ac_no": 309,
+      "ac_name_en": "Rudhauli",
+      "ac_name_hi": "रुधौली",
+      "district": "बस्ती",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बस्ती"
+    },
+    {
+      "ac_no": 310,
+      "ac_name_en": "Basti Sadar",
+      "ac_name_hi": "बस्ती सदर",
+      "district": "बस्ती",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बस्ती"
+    },
+    {
+      "ac_no": 311,
+      "ac_name_en": "Mahadewa",
+      "ac_name_hi": "महादेवा",
+      "district": "बस्ती",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बस्ती"
+    },
+    {
+      "ac_no": 312,
+      "ac_name_en": "Menhdawal",
+      "ac_name_hi": "मेंहदावल",
+      "district": "संत कबीर नगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "संत कबीर नगर"
+    },
+    {
+      "ac_no": 313,
+      "ac_name_en": "Khalilabad",
+      "ac_name_hi": "खलीलाबाद",
+      "district": "संत कबीर नगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "संत कबीर नगर"
+    },
+    {
+      "ac_no": 314,
+      "ac_name_en": "Dhanghata",
+      "ac_name_hi": "धनघटा",
+      "district": "संत कबीर नगर",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "संत कबीर नगर"
+    },
+    {
+      "ac_no": 315,
+      "ac_name_en": "Pharenda",
+      "ac_name_hi": "फरेन्दा",
+      "district": "महराजगंज",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "महराजगंज"
+    },
+    {
+      "ac_no": 316,
+      "ac_name_en": "Nautanwa",
+      "ac_name_hi": "नौतनवा",
+      "district": "महराजगंज",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "महराजगंज"
+    },
+    {
+      "ac_no": 317,
+      "ac_name_en": "Siswa",
+      "ac_name_hi": "सिसवा",
+      "district": "महराजगंज",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "महराजगंज"
+    },
+    {
+      "ac_no": 318,
+      "ac_name_en": "Maharajganj",
+      "ac_name_hi": "महराजगंज",
+      "district": "महराजगंज",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "महराजगंज"
+    },
+    {
+      "ac_no": 319,
+      "ac_name_en": "Paniyara",
+      "ac_name_hi": "पनियरा",
+      "district": "महराजगंज",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "महराजगंज"
+    },
+    {
+      "ac_no": 320,
+      "ac_name_en": "Campiyarganj",
+      "ac_name_hi": "कैम्पियरगंज",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोरखपुर"
+    },
+    {
+      "ac_no": 321,
+      "ac_name_en": "Pipraich",
+      "ac_name_hi": "पिपराईच",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोरखपुर"
+    },
+    {
+      "ac_no": 322,
+      "ac_name_en": "Gorakhpur Urban",
+      "ac_name_hi": "गोरखपुर शहर",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोरखपुर"
+    },
+    {
+      "ac_no": 323,
+      "ac_name_en": "Gorakhpur Rural",
+      "ac_name_hi": "गोरखपुर ग्रामीण",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोरखपुर"
+    },
+    {
+      "ac_no": 324,
+      "ac_name_en": "Sahajanwa",
+      "ac_name_hi": "सहजनवा",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गोरखपुर"
+    },
+    {
+      "ac_no": 325,
+      "ac_name_en": "Khajani",
+      "ac_name_hi": "खजनी",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "संत कबीर नगर"
+    },
+    {
+      "ac_no": 326,
+      "ac_name_en": "Chauri Chaura",
+      "ac_name_hi": "चौरी चौरा",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांसगांव"
+    },
+    {
+      "ac_no": 327,
+      "ac_name_en": "Bansgaon",
+      "ac_name_hi": "बांसगांव",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "बांसगांव"
+    },
+    {
+      "ac_no": 328,
+      "ac_name_en": "Chillupar",
+      "ac_name_hi": "चिल्लूपार",
+      "district": "गोरखपुर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांसगांव"
+    },
+    {
+      "ac_no": 329,
+      "ac_name_en": "Khadda",
+      "ac_name_hi": "खड्डा",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कुशीनगर"
+    },
+    {
+      "ac_no": 330,
+      "ac_name_en": "Padrauna",
+      "ac_name_hi": "पडरौना",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कुशीनगर"
+    },
+    {
+      "ac_no": 331,
+      "ac_name_en": "Tamkuhi Raj",
+      "ac_name_hi": "तमकुही राज",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "देवरिया"
+    },
+    {
+      "ac_no": 332,
+      "ac_name_en": "Fazilnagar",
+      "ac_name_hi": "फाजिलनगर",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "देवरिया"
+    },
+    {
+      "ac_no": 333,
+      "ac_name_en": "Kushinagar",
+      "ac_name_hi": "कुशीनगर",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कुशीनगर"
+    },
+    {
+      "ac_no": 334,
+      "ac_name_en": "Hata",
+      "ac_name_hi": "हाटा",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "कुशीनगर"
+    },
+    {
+      "ac_no": 335,
+      "ac_name_en": "Ramkola",
+      "ac_name_hi": "रामकोला",
+      "district": "कुशीनगर",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "कुशीनगर"
+    },
+    {
+      "ac_no": 336,
+      "ac_name_en": "Rudrapur",
+      "ac_name_hi": "रुद्रपुर",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांसगांव"
+    },
+    {
+      "ac_no": 337,
+      "ac_name_en": "Deoria",
+      "ac_name_hi": "देवरिया",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "देवरिया"
+    },
+    {
+      "ac_no": 338,
+      "ac_name_en": "Pathardeva",
+      "ac_name_hi": "पथरदेवा",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "देवरिया"
+    },
+    {
+      "ac_no": 339,
+      "ac_name_en": "Rampur Karkhana",
+      "ac_name_hi": "रामपुर कारखाना",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "देवरिया"
+    },
+    {
+      "ac_no": 340,
+      "ac_name_en": "Bhatpar Rani",
+      "ac_name_hi": "भाटपार रानी",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सलेमपुर"
+    },
+    {
+      "ac_no": 341,
+      "ac_name_en": "Salempur",
+      "ac_name_hi": "सलेमपुर",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "सलेमपुर"
+    },
+    {
+      "ac_no": 342,
+      "ac_name_en": "Barhaj",
+      "ac_name_hi": "बरहज",
+      "district": "देवरिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बांसगांव"
+    },
+    {
+      "ac_no": 343,
+      "ac_name_en": "Atrauliya",
+      "ac_name_hi": "अतरौलिया",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लालगंज"
+    },
+    {
+      "ac_no": 344,
+      "ac_name_en": "Gopalpur",
+      "ac_name_hi": "गोपालपुर",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आजमगढ़"
+    },
+    {
+      "ac_no": 345,
+      "ac_name_en": "Sagri",
+      "ac_name_hi": "सगड़ी",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आजमगढ़"
+    },
+    {
+      "ac_no": 346,
+      "ac_name_en": "Mubarakpur",
+      "ac_name_hi": "मुबारकपुर",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आजमगढ़"
+    },
+    {
+      "ac_no": 347,
+      "ac_name_en": "Azamgarh",
+      "ac_name_hi": "आजमगढ़",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "आजमगढ़"
+    },
+    {
+      "ac_no": 348,
+      "ac_name_en": "Nizamabad",
+      "ac_name_hi": "निजामाबाद",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लालगंज"
+    },
+    {
+      "ac_no": 349,
+      "ac_name_en": "Phoolpur Pawai",
+      "ac_name_hi": "फूलपुर पवई",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लालगंज"
+    },
+    {
+      "ac_no": 350,
+      "ac_name_en": "Didarganj",
+      "ac_name_hi": "दीदारगंज",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "लालगंज"
+    },
+    {
+      "ac_no": 351,
+      "ac_name_en": "Lalganj",
+      "ac_name_hi": "लालगंज",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "लालगंज"
+    },
+    {
+      "ac_no": 352,
+      "ac_name_en": "Mehnagar",
+      "ac_name_hi": "मेहनगर",
+      "district": "आजमगढ़",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "आजमगढ़"
+    },
+    {
+      "ac_no": 353,
+      "ac_name_en": "Madhuban",
+      "ac_name_hi": "मधुबन",
+      "district": "मऊ",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "घोसी"
+    },
+    {
+      "ac_no": 354,
+      "ac_name_en": "Ghosi",
+      "ac_name_hi": "घोसी",
+      "district": "मऊ",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "घोसी"
+    },
+    {
+      "ac_no": 355,
+      "ac_name_en": "Muhammadabad Gohna",
+      "ac_name_hi": "मुहम्मदाबाद गोहना",
+      "district": "मऊ",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "घोसी"
+    },
+    {
+      "ac_no": 356,
+      "ac_name_en": "Mau",
+      "ac_name_hi": "मऊ",
+      "district": "मऊ",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "घोसी"
+    },
+    {
+      "ac_no": 357,
+      "ac_name_en": "Belthara Road",
+      "ac_name_hi": "बेल्थरा रोड",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "सलेमपुर"
+    },
+    {
+      "ac_no": 358,
+      "ac_name_en": "Rasara",
+      "ac_name_hi": "रसड़ा",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "घोसी"
+    },
+    {
+      "ac_no": 359,
+      "ac_name_en": "Sikandarpur",
+      "ac_name_hi": "सिकन्दरपुर",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सलेमपुर"
+    },
+    {
+      "ac_no": 360,
+      "ac_name_en": "Phephana",
+      "ac_name_hi": "फेफना",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बलिया"
+    },
+    {
+      "ac_no": 361,
+      "ac_name_en": "Ballia Nagar",
+      "ac_name_hi": "बलिया नगर",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बलिया"
+    },
+    {
+      "ac_no": 362,
+      "ac_name_en": "Bansdih",
+      "ac_name_hi": "बांसडीह",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "सलेमपुर"
+    },
+    {
+      "ac_no": 363,
+      "ac_name_en": "Bairia",
+      "ac_name_hi": "बैरिया",
+      "district": "बलिया",
+      "region": "गोरखपुर",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बलिया"
+    },
+    {
+      "ac_no": 364,
+      "ac_name_en": "Badlapur",
+      "ac_name_hi": "बदलापुर",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जौनपुर"
+    },
+    {
+      "ac_no": 365,
+      "ac_name_en": "Shahganj",
+      "ac_name_hi": "शाहगंज",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जौनपुर"
+    },
+    {
+      "ac_no": 366,
+      "ac_name_en": "Jaunpur",
+      "ac_name_hi": "जौनपुर",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जौनपुर"
+    },
+    {
+      "ac_no": 367,
+      "ac_name_en": "Malhani",
+      "ac_name_hi": "मल्हनी",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जौनपुर"
+    },
+    {
+      "ac_no": 368,
+      "ac_name_en": "Mungra Badshahpur",
+      "ac_name_hi": "मुंगरा बादशाहपुर",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "जौनपुर"
+    },
+    {
+      "ac_no": 369,
+      "ac_name_en": "Machhlishahar",
+      "ac_name_hi": "मछलीशहर",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मछलीशहर"
+    },
+    {
+      "ac_no": 370,
+      "ac_name_en": "Mariyahu",
+      "ac_name_hi": "मड़ियाहू",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मछलीशहर"
+    },
+    {
+      "ac_no": 371,
+      "ac_name_en": "Jafrabad",
+      "ac_name_hi": "जफराबाद",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मछलीशहर"
+    },
+    {
+      "ac_no": 372,
+      "ac_name_en": "Kerakat",
+      "ac_name_hi": "केराकत",
+      "district": "जौनपुर",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मछलीशहर"
+    },
+    {
+      "ac_no": 373,
+      "ac_name_en": "Jakhanian",
+      "ac_name_hi": "जखनियां",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "गाजीपुर"
+    },
+    {
+      "ac_no": 374,
+      "ac_name_en": "Saidpur",
+      "ac_name_hi": "सैदपुर",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "गाजीपुर"
+    },
+    {
+      "ac_no": 375,
+      "ac_name_en": "Ghazipur Sadar",
+      "ac_name_hi": "गाजीपुर",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजीपुर"
+    },
+    {
+      "ac_no": 376,
+      "ac_name_en": "Jangipur",
+      "ac_name_hi": "जंगीपुर",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजीपुर"
+    },
+    {
+      "ac_no": 377,
+      "ac_name_en": "Zahoorabad",
+      "ac_name_hi": "जहूराबाद",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बलिया"
+    },
+    {
+      "ac_no": 378,
+      "ac_name_en": "Mohammadabad",
+      "ac_name_hi": "मोहम्मदाबाद",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "बलिया"
+    },
+    {
+      "ac_no": 379,
+      "ac_name_en": "Zamaniya",
+      "ac_name_hi": "जमानियां",
+      "district": "गाजीपुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "गाजीपुर"
+    },
+    {
+      "ac_no": 380,
+      "ac_name_en": "Mughalsarai",
+      "ac_name_hi": "मुगलसराय",
+      "district": "चंदौली",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "चंदौली"
+    },
+    {
+      "ac_no": 381,
+      "ac_name_en": "Sakaldiha",
+      "ac_name_hi": "सकलडीहा",
+      "district": "चंदौली",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "चंदौली"
+    },
+    {
+      "ac_no": 382,
+      "ac_name_en": "Saiyadraja",
+      "ac_name_hi": "सैयदराजा",
+      "district": "चंदौली",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "चंदौली"
+    },
+    {
+      "ac_no": 383,
+      "ac_name_en": "Chakia",
+      "ac_name_hi": "चकिया",
+      "district": "चंदौली",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "राबर्ट्सगंज"
+    },
+    {
+      "ac_no": 384,
+      "ac_name_en": "Pindra",
+      "ac_name_hi": "पिण्ड्रा",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मछलीशहर"
+    },
+    {
+      "ac_no": 385,
+      "ac_name_en": "Ajgara",
+      "ac_name_hi": "अजगरा",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "चंदौली"
+    },
+    {
+      "ac_no": 386,
+      "ac_name_en": "Shivpur",
+      "ac_name_hi": "शिवपुर",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "चंदौली"
+    },
+    {
+      "ac_no": 387,
+      "ac_name_en": "Rohaniya",
+      "ac_name_hi": "रोहनियां",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "वाराणसी"
+    },
+    {
+      "ac_no": 388,
+      "ac_name_en": "Varanasi North",
+      "ac_name_hi": "वाराणसी उत्तरी",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "वाराणसी"
+    },
+    {
+      "ac_no": 389,
+      "ac_name_en": "Varanasi South",
+      "ac_name_hi": "वाराणसी दक्षिणी",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "वाराणसी"
+    },
+    {
+      "ac_no": 390,
+      "ac_name_en": "Varanasi Cantt",
+      "ac_name_hi": "वाराणसी कैण्ट",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "वाराणसी"
+    },
+    {
+      "ac_no": 391,
+      "ac_name_en": "Sevapuri",
+      "ac_name_hi": "सेवापुरी",
+      "district": "वाराणसी",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "वाराणसी"
+    },
+    {
+      "ac_no": 392,
+      "ac_name_en": "Bhadohi",
+      "ac_name_hi": "भदोही",
+      "district": "भदोही",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "भदोही"
+    },
+    {
+      "ac_no": 393,
+      "ac_name_en": "Gyanpur",
+      "ac_name_hi": "ज्ञानपुर",
+      "district": "भदोही",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "भदोही"
+    },
+    {
+      "ac_no": 394,
+      "ac_name_en": "Aurai",
+      "ac_name_hi": "औराई",
+      "district": "भदोही",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "भदोही"
+    },
+    {
+      "ac_no": 395,
+      "ac_name_en": "Chhanbey",
+      "ac_name_hi": "छानबे",
+      "district": "मिर्जापुर",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "मिर्जापुर"
+    },
+    {
+      "ac_no": 396,
+      "ac_name_en": "Mirzapur",
+      "ac_name_hi": "मिर्जापुर",
+      "district": "मिर्जापुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मिर्जापुर"
+    },
+    {
+      "ac_no": 397,
+      "ac_name_en": "Majhawan",
+      "ac_name_hi": "मझवां",
+      "district": "मिर्जापुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मिर्जापुर"
+    },
+    {
+      "ac_no": 398,
+      "ac_name_en": "Chunar",
+      "ac_name_hi": "चुनार",
+      "district": "मिर्जापुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मिर्जापुर"
+    },
+    {
+      "ac_no": 399,
+      "ac_name_en": "Marihan",
+      "ac_name_hi": "मड़िहान",
+      "district": "मिर्जापुर",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "मिर्जापुर"
+    },
+    {
+      "ac_no": 400,
+      "ac_name_en": "Ghorawal",
+      "ac_name_hi": "घोरावल",
+      "district": "सोनभद्र",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "राबर्ट्सगंज"
+    },
+    {
+      "ac_no": 401,
+      "ac_name_en": "Robertsganj",
+      "ac_name_hi": "राबर्ट्सगंज",
+      "district": "सोनभद्र",
+      "region": "काशी",
+      "seat_category": "सामान्य",
+      "lok_sabha": "राबर्ट्सगंज"
+    },
+    {
+      "ac_no": 402,
+      "ac_name_en": "Obra",
+      "ac_name_hi": "ओबरा",
+      "district": "सोनभद्र",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "राबर्ट्सगंज"
+    },
+    {
+      "ac_no": 403,
+      "ac_name_en": "Duddhi",
+      "ac_name_hi": "दुद्धी",
+      "district": "सोनभद्र",
+      "region": "काशी",
+      "seat_category": "आरक्षित",
+      "lok_sabha": "राबर्ट्सगंज"
+    }
+  ]
+}
