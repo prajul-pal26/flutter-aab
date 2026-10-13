@@ -8,6 +8,7 @@ import '../services/survey_service.dart';
 import '../services/local_database_service.dart';
 import 'survey_form_screen.dart';
 import 'login_screen.dart';
+import 'ac_map_painter.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -41,6 +42,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
   int _draftCount = 0;
   bool _isSyncingDrafts = false;
   StreamSubscription<List<ConnectivityResult>>? _connectivitySubscription;
+
+  // AC Boundary & Survey Pins State
+  Map<int, dynamic>? _geoJsonData;
+  List<List<Offset>> _acPolygons = [];
+  List<Offset> _acSurveyPoints = [];
+  Rect _acBoundingBox = Rect.zero;
+  bool _isLoadingMap = false;
 
   @override
   void initState() {
@@ -207,14 +215,88 @@ class _DashboardScreenState extends State<DashboardScreen> {
     });
   }
 
+  Future<void> _loadMapForAC(int acNo) async {
+    setState(() => _isLoadingMap = true);
+    try {
+      // 1. Load GeoJSON file once
+      if (_geoJsonData == null) {
+        final geoString = await rootBundle.loadString('assets/up_assembly_ac.geojson');
+        final fullGeo = json.decode(geoString);
+        final map = <int, dynamic>{};
+        for (var feat in fullGeo['features']) {
+          final no = int.tryParse(feat['properties']['AC_NO']?.toString() ?? '');
+          if (no != null) map[no] = feat;
+        }
+        _geoJsonData = map;
+      }
+
+      final feature = _geoJsonData?[acNo];
+      final List<List<Offset>> polygons = [];
+      double minX = 999.0, maxX = -999.0, minY = 999.0, maxY = -999.0;
+
+      if (feature != null && feature['geometry'] != null) {
+        final geom = feature['geometry'];
+        final geomType = geom['type'];
+        final coords = geom['coordinates'];
+
+        void parseRing(List ring) {
+          final List<Offset> poly = [];
+          for (var pt in ring) {
+            final lng = (pt[0] as num).toDouble();
+            final lat = (pt[1] as num).toDouble();
+            if (lng < minX) minX = lng;
+            if (lng > maxX) maxX = lng;
+            if (lat < minY) minY = lat;
+            if (lat > maxY) maxY = lat;
+            poly.add(Offset(lng, lat));
+          }
+          if (poly.isNotEmpty) polygons.add(poly);
+        }
+
+        if (geomType == 'Polygon') {
+          for (var ring in coords) {
+            parseRing(ring as List);
+          }
+        } else if (geomType == 'MultiPolygon') {
+          for (var polyCoords in coords) {
+            for (var ring in polyCoords) {
+              parseRing(ring as List);
+            }
+          }
+        }
+      }
+
+      // 2. Fetch live survey coordinates from Supabase
+      final pinLocations = await _surveyService.getACSurveyLocations(acNo);
+      final List<Offset> pins = pinLocations.map((p) => Offset(p['lng']!, p['lat']!)).toList();
+
+      if (mounted) {
+        setState(() {
+          _acPolygons = polygons;
+          _acSurveyPoints = pins;
+          _acBoundingBox = polygons.isNotEmpty
+              ? Rect.fromLTRB(minX, minY, maxX, maxY)
+              : Rect.zero;
+          _isLoadingMap = false;
+        });
+      }
+    } catch (_) {
+      if (mounted) setState(() => _isLoadingMap = false);
+    }
+  }
+
   Future<void> _onACChanged(Map<String, dynamic>? ac) async {
     setState(() {
       _selectedAC = ac;
+      _acPolygons = [];
+      _acSurveyPoints = [];
     });
 
     if (ac != null) {
+      final acNo = ac['ac_no'] as int;
       setState(() => _isLoadingStats = true);
-      final stats = await _surveyService.getACStats(ac['ac_no']);
+      _loadMapForAC(acNo);
+      final stats = await _surveyService.getACStats(acNo);
       setState(() {
         _totalACSubmissions = stats['total'] ?? 0;
         _mySubmissions = stats['myCount'] ?? 0;
@@ -429,6 +511,103 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
 
                   const SizedBox(height: 24),
+
+                  // AC BOUNDARY MAP WITH SURVEY PINS (Above Metadata)
+                  if (_selectedAC != null) ...[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'विधानसभा क्षेत्र मानचित्र (Coverage Map)',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color(0xFF1E3A8A)),
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              width: 8,
+                              height: 8,
+                              decoration: const BoxDecoration(
+                                color: Color(0xFFDC2626),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              '${_acSurveyPoints.length} फॉर्म लोकेशन',
+                              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Color(0xFFDC2626)),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Card(
+                      elevation: 1.5,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                        side: BorderSide(color: Colors.blue.shade100),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: Container(
+                          height: 240,
+                          width: double.infinity,
+                          color: const Color(0xFFF1F5F9),
+                          child: _isLoadingMap
+                              ? const Center(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      CircularProgressIndicator(),
+                                      SizedBox(height: 8),
+                                      Text('मानचित्र लोड हो रहा है...', style: TextStyle(fontSize: 12, color: Colors.grey)),
+                                    ],
+                                  ),
+                                )
+                              : _acPolygons.isEmpty
+                                  ? const Center(
+                                      child: Text(
+                                        'मानचित्र सीमा अनुपलब्ध',
+                                        style: TextStyle(color: Colors.grey, fontSize: 13),
+                                      ),
+                                    )
+                                  : Stack(
+                                      children: [
+                                        CustomPaint(
+                                          size: const Size(double.infinity, 240),
+                                          painter: ACMapPainter(
+                                            polygons: _acPolygons,
+                                            surveyPoints: _acSurveyPoints,
+                                            boundingBox: _acBoundingBox,
+                                          ),
+                                        ),
+                                        Positioned(
+                                          bottom: 10,
+                                          left: 12,
+                                          child: Container(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                            decoration: BoxDecoration(
+                                              color: Colors.white.withValues(alpha: 0.9),
+                                              borderRadius: BorderRadius.circular(8),
+                                              border: Border.all(color: Colors.grey.shade300),
+                                            ),
+                                            child: Text(
+                                              '[${_selectedAC!['ac_no']}] ${_selectedAC!['ac_name_hi']}',
+                                              style: const TextStyle(
+                                                fontSize: 11,
+                                                fontWeight: FontWeight.bold,
+                                                color: Color(0xFF1E3A8A),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                  ],
 
                   // Live Metadata & Stats Card
                   if (_selectedAC != null) ...[

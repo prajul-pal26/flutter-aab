@@ -61,6 +61,30 @@ class SurveyService {
     }
   }
 
+  // Fetch coordinates of all submitted surveys for a specific AC
+  Future<List<Map<String, double>>> getACSurveyLocations(int acId) async {
+    try {
+      final res = await client
+          .from('survey_responses')
+          .select('location')
+          .eq('ac_id', acId)
+          .not('location', 'is', null);
+
+      final List<Map<String, double>> points = [];
+      for (var row in res as List) {
+        final loc = row['location'];
+        if (loc != null && loc['latitude'] != null && loc['longitude'] != null) {
+          final lat = (loc['latitude'] as num).toDouble();
+          final lng = (loc['longitude'] as num).toDouble();
+          points.add({'lat': lat, 'lng': lng});
+        }
+      }
+      return points;
+    } catch (_) {
+      return [];
+    }
+  }
+
   // Upload Audio Recording to Supabase Storage
   Future<String> uploadAudio(File audioFile, int acId) async {
     final fileName = '${acId}_${DateTime.now().millisecondsSinceEpoch}.m4a';

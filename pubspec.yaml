@@ -29,6 +29,7 @@ flutter:
   assets:
     - assets/up_75_districts_403_acs.json
     - assets/questions.json
+    - assets/up_assembly_ac.geojson
 
 dependency_overrides:
   record_linux: ^2.1.3
